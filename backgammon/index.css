@@ -1,0 +1,380 @@
+* {
+  box-sizing: border-box; }
+
+.backgammon-board {
+  background-color: #b38d5c;
+  width: 1200px;
+  max-width: 1200px;
+  height: 670px;
+  max-height: 670px;
+  margin: 20px auto;
+  border-radius: 20px;
+  position: relative;
+  z-index: 100;
+  font-family: sans-serif; }
+  .backgammon-board__left {
+    position: absolute;
+    left: 24px;
+    top: 24px;
+    bottom: 24px;
+    width: 485px;
+    background-color: #886439;
+    border-radius: 10px;
+    z-index: 50;
+    overflow: hidden; }
+  .backgammon-board__right {
+    position: absolute;
+    right: 145px;
+    top: 24px;
+    bottom: 24px;
+    width: 485px;
+    background-color: #886439;
+    border-radius: 10px;
+    overflow: hidden; }
+  .backgammon-board__main-shadow {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-box-shadow: inset 3px 3px 0 3px rgba(91, 68, 37, 0.65);
+    box-shadow: inset 3px 3px 0 3px rgba(91, 68, 37, 0.65);
+    border-radius: 10px;
+    z-index: 200; }
+  .backgammon-board__bornes .backgammon-board__borne {
+    position: absolute;
+    background-color: #886439;
+    width: 87px;
+    height: 250px;
+    right: 24px;
+    border-radius: 10px;
+    padding: 8px;
+    -webkit-box-shadow: inset 4px 4px 0 1px rgba(91, 68, 37, 0.65);
+    box-shadow: inset 4px 4px 0 1px rgba(91, 68, 37, 0.65); }
+    .backgammon-board__bornes .backgammon-board__borne:nth-child(1) {
+      top: 24px; }
+    .backgammon-board__bornes .backgammon-board__borne:nth-child(3) {
+      bottom: 24px; }
+    .backgammon-board__bornes .backgammon-board__borne .backgammon-board__retired-piece {
+      width: 100%;
+      height: 14px;
+      border-radius: 20px;
+      margin: 0 0 2px 0; }
+    .backgammon-board__bornes .backgammon-board__borne .backgammon-board__retired-piece.white-piece {
+      background-color: #e0e0e0; }
+    .backgammon-board__bornes .backgammon-board__borne .backgammon-board__retired-piece.black-piece {
+      background-color: #292a2b; }
+  .backgammon-board__bornes .backgammon-board__borne.selected-move {
+    background-color: #8c9145; }
+  .backgammon-board__bornes .backgammon-board__borne.drag-move {
+    background-color: #BA583A; }
+  .backgammon-board__bornes .backgammon-board__double-cube {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    font-size: 30px;
+    width: 75px;
+    height: 74px;
+    background-color: #fff;
+    border-radius: 10px;
+    right: 30px;
+    top: 298px; }
+  .backgammon-board__point {
+    position: absolute;
+    width: 131px;
+    height: 230px;
+    background-color: #987c5a;
+    clip-path: polygon(50% 0, 20% 100%, 80% 100%);
+    z-index: 60; }
+    .backgammon-board__point:nth-child(odd) {
+      background-color: #664a2a; }
+    .backgammon-board__point:nth-child(1) {
+      bottom: 0;
+      left: -20px; }
+    .backgammon-board__point:nth-child(2) {
+      bottom: 0;
+      left: 58px; }
+    .backgammon-board__point:nth-child(3) {
+      bottom: 0;
+      left: 137px; }
+    .backgammon-board__point:nth-child(4) {
+      bottom: 0;
+      left: 215px; }
+    .backgammon-board__point:nth-child(5) {
+      bottom: 0;
+      left: 293px; }
+    .backgammon-board__point:nth-child(6) {
+      bottom: 0;
+      left: 372px; }
+    .backgammon-board__point:nth-child(7) {
+      top: 0;
+      left: -20px;
+      clip-path: polygon(50% 100%, 20% 0, 80% 0); }
+    .backgammon-board__point:nth-child(8) {
+      top: 0;
+      left: 58px;
+      clip-path: polygon(50% 100%, 20% 0, 80% 0); }
+    .backgammon-board__point:nth-child(9) {
+      top: 0;
+      left: 137px;
+      clip-path: polygon(50% 100%, 20% 0, 80% 0); }
+    .backgammon-board__point:nth-child(10) {
+      top: 0;
+      left: 215px;
+      clip-path: polygon(50% 100%, 20% 0, 80% 0); }
+    .backgammon-board__point:nth-child(11) {
+      top: 0;
+      left: 293px;
+      clip-path: polygon(50% 100%, 20% 0, 80% 0); }
+    .backgammon-board__point:nth-child(12) {
+      top: 0;
+      left: 372px;
+      clip-path: polygon(50% 100%, 20% 0, 80% 0); }
+  .backgammon-board__point.selected-move {
+    background-color: #8c9145; }
+  .backgammon-board__point.drag-move {
+    background-color: #BA583A; }
+  .backgammon-board__bars .backgammon-board__bar {
+    width: 75px;
+    height: 75px;
+    position: absolute;
+    left: 502px; }
+    .backgammon-board__bars .backgammon-board__bar:first-child {
+      top: 175px; }
+    .backgammon-board__bars .backgammon-board__bar:last-child {
+      bottom: 175px; }
+  .backgammon-board__pips .backgammon-board__pip-count {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    left: 527px; }
+    .backgammon-board__pips .backgammon-board__pip-count:first-child {
+      top: 50px;
+      color: #645341; }
+      .backgammon-board__pips .backgammon-board__pip-count:first-child .backgammon-board__pip {
+        background-color: #645341;
+        margin-bottom: 13px; }
+    .backgammon-board__pips .backgammon-board__pip-count:last-child {
+      bottom: 50px;
+      color: #dfcfbc; }
+      .backgammon-board__pips .backgammon-board__pip-count:last-child .backgammon-board__pip {
+        background-color: #dfcfbc;
+        margin-bottom: 13px; }
+    .backgammon-board__pips .backgammon-board__pip-count .backgammon-board__pip {
+      display: block;
+      width: 12px;
+      height: 12px;
+      border-radius: 50%;
+      margin-top: 14px; }
+  .backgammon-board__pieces .backgammon-board__piece {
+    width: 61px;
+    height: 61px;
+    position: absolute;
+    border-radius: 50%;
+    z-index: 90;
+    cursor: grab; }
+    .backgammon-board__pieces .backgammon-board__piece:nth-child(1) {
+      left: 39px;
+      top: 32px; }
+    .backgammon-board__pieces .backgammon-board__piece:nth-child(2) {
+      left: 39px;
+      top: 62px; }
+    .backgammon-board__pieces .backgammon-board__piece:nth-child(3) {
+      left: 39px;
+      top: 92px; }
+    .backgammon-board__pieces .backgammon-board__piece:nth-child(4) {
+      left: 39px;
+      top: 122px; }
+    .backgammon-board__pieces .backgammon-board__piece:nth-child(5) {
+      left: 39px;
+      top: 152px; }
+    .backgammon-board__pieces .backgammon-board__piece:nth-child(6) {
+      left: 585px;
+      top: 32px; }
+    .backgammon-board__pieces .backgammon-board__piece:nth-child(7) {
+      left: 585px;
+      top: 62px; }
+    .backgammon-board__pieces .backgammon-board__piece:nth-child(8) {
+      left: 585px;
+      top: 92px; }
+    .backgammon-board__pieces .backgammon-board__piece:nth-child(9) {
+      left: 585px;
+      top: 122px; }
+    .backgammon-board__pieces .backgammon-board__piece:nth-child(10) {
+      left: 585px;
+      top: 152px; }
+    .backgammon-board__pieces .backgammon-board__piece:nth-child(11) {
+      left: 509px;
+      top: 182px; }
+    .backgammon-board__pieces .backgammon-board__piece:nth-child(12) {
+      left: 509px;
+      bottom: 182px; }
+  .backgammon-board__pieces .backgammon-board__piece.white-piece {
+    background-color: #e0e0e0;
+    -webkit-box-shadow: inset 9px 7px 1px -3px #ececec;
+    box-shadow: inset 9px 7px 1px -3px #ececec;
+    border: 1px solid #e0e0e0; }
+  .backgammon-board__pieces .backgammon-board__piece.black-piece {
+    background-color: #292a2b;
+    -webkit-box-shadow: inset 9px 7px 1px -3px #353637;
+    box-shadow: inset 9px 7px 1px -3px #353637;
+    border: 1px solid #292a2b; }
+  .backgammon-board__pieces .backgammon-board__piece.move-piece {
+    left: 34px;
+    width: 70px;
+    height: 70px; }
+  .backgammon-board__bones.not-selected .backgammon-board__bone {
+    opacity: 0.5; }
+  .backgammon-board__bones.not-selected .backgammon-board__btn {
+    display: flex; }
+  .backgammon-board__bone {
+    top: 50%;
+    left: 67%;
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    background-color: #fff;
+    border-radius: 10px;
+    transform: translate(-50%, -50%); }
+    .backgammon-board__bone .backgammon-board__circle {
+      display: block;
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      background-color: #000;
+      position: absolute; }
+    .backgammon-board__bone-six {
+      display: none;
+      width: 100%;
+      height: 100%;
+      position: relative; }
+      .backgammon-board__bone-six .backgammon-board__circle:nth-child(1) {
+        top: 10px;
+        left: 10px; }
+      .backgammon-board__bone-six .backgammon-board__circle:nth-child(2) {
+        top: 25px;
+        left: 10px; }
+      .backgammon-board__bone-six .backgammon-board__circle:nth-child(3) {
+        top: 40px;
+        left: 10px; }
+      .backgammon-board__bone-six .backgammon-board__circle:nth-child(4) {
+        top: 10px;
+        right: 10px; }
+      .backgammon-board__bone-six .backgammon-board__circle:nth-child(5) {
+        top: 25px;
+        right: 10px; }
+      .backgammon-board__bone-six .backgammon-board__circle:nth-child(6) {
+        top: 40px;
+        right: 10px; }
+    .backgammon-board__bone-five {
+      display: none;
+      width: 100%;
+      height: 100%;
+      position: relative; }
+      .backgammon-board__bone-five .backgammon-board__circle:nth-child(1) {
+        top: 10px;
+        left: 10px; }
+      .backgammon-board__bone-five .backgammon-board__circle:nth-child(2) {
+        top: 10px;
+        right: 10px; }
+      .backgammon-board__bone-five .backgammon-board__circle:nth-child(3) {
+        top: 40px;
+        left: 10px; }
+      .backgammon-board__bone-five .backgammon-board__circle:nth-child(4) {
+        top: 40px;
+        right: 10px; }
+      .backgammon-board__bone-five .backgammon-board__circle:nth-child(5) {
+        top: 50%;
+        right: 50%;
+        transform: translate(50%, -50%); }
+    .backgammon-board__bone-four {
+      display: none;
+      width: 100%;
+      height: 100%;
+      position: relative; }
+      .backgammon-board__bone-four .backgammon-board__circle:nth-child(1) {
+        top: 10px;
+        left: 10px; }
+      .backgammon-board__bone-four .backgammon-board__circle:nth-child(2) {
+        top: 10px;
+        right: 10px; }
+      .backgammon-board__bone-four .backgammon-board__circle:nth-child(3) {
+        top: 40px;
+        left: 10px; }
+      .backgammon-board__bone-four .backgammon-board__circle:nth-child(4) {
+        top: 40px;
+        right: 10px; }
+    .backgammon-board__bone-three {
+      display: none;
+      width: 100%;
+      height: 100%;
+      position: relative; }
+      .backgammon-board__bone-three .backgammon-board__circle:nth-child(1) {
+        top: 10px;
+        right: 10px; }
+      .backgammon-board__bone-three .backgammon-board__circle:nth-child(2) {
+        top: 40px;
+        left: 10px; }
+      .backgammon-board__bone-three .backgammon-board__circle:nth-child(3) {
+        top: 50%;
+        right: 50%;
+        transform: translate(50%, -50%); }
+    .backgammon-board__bone-two {
+      display: none;
+      width: 100%;
+      height: 100%;
+      position: relative; }
+      .backgammon-board__bone-two .backgammon-board__circle:nth-child(1) {
+        top: 10px;
+        right: 10px; }
+      .backgammon-board__bone-two .backgammon-board__circle:nth-child(2) {
+        top: 40px;
+        left: 10px; }
+    .backgammon-board__bone-one {
+      display: none;
+      width: 100%;
+      height: 100%;
+      position: relative; }
+      .backgammon-board__bone-one .backgammon-board__circle:nth-child(1) {
+        top: 50%;
+        right: 50%;
+        transform: translate(50%, -50%); }
+  .backgammon-board__bone.bone-six .backgammon-board__bone-six {
+    display: block !important; }
+  .backgammon-board__bone.bone-five .backgammon-board__bone-five {
+    display: block !important; }
+  .backgammon-board__bone.bone-four .backgammon-board__bone-four {
+    display: block !important; }
+  .backgammon-board__bone.bone-three .backgammon-board__bone-three {
+    display: block !important; }
+  .backgammon-board__bone.bone-two .backgammon-board__bone-two {
+    display: block !important; }
+  .backgammon-board__bone.bone-one .backgammon-board__bone-one {
+    display: block !important; }
+  .backgammon-board__bone.bone-translate {
+    left: 27%;
+    transform: rotate(-30deg);
+    transform-origin: -15px; }
+  .backgammon-board__btn {
+    display: none;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    border-radius: 50%;
+    cursor: pointer;
+    width: 90px;
+    height: 90px;
+    background-color: #cd4315;
+    z-index: 90;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); }
+    .backgammon-board__btn:after {
+      content: "\f522";
+      display: inline-flex;
+      font-family: "Font Awesome 5 Pro";
+      font-size: 40px;
+      color: #fff; }
+
+/*# sourceMappingURL=index.css.map */

@@ -1,0 +1,259 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>backgammon</title>
+    <link rel="stylesheet" href="//pro.fontawesome.com/releases/v5.10.1/css/all.css"
+          integrity="sha384-y++enYq9sdV7msNmXr08kJdkX4zEI1gMjjkw0l9ttOepH7fMdhb7CePwuRQCfwCr" crossorigin="anonymous">
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+<div class="game__main">
+    <div class="game__container">
+        <div class="game__backgammon-board backgammon-board">
+            <div class="backgammon-board__left">
+                <div class="backgammon-board__bones not-selected">
+                    <div class="backgammon-board__bone bone-six bone-translate">
+                        <div class="backgammon-board__bone-six">
+                            <span class="backgammon-board__circle"></span>
+                            <span class="backgammon-board__circle"></span>
+                            <span class="backgammon-board__circle"></span>
+                            <span class="backgammon-board__circle"></span>
+                            <span class="backgammon-board__circle"></span>
+                            <span class="backgammon-board__circle"></span>
+                        </div>
+                        <div class="backgammon-board__bone-five">
+                            <span class="backgammon-board__circle"></span>
+                            <span class="backgammon-board__circle"></span>
+                            <span class="backgammon-board__circle"></span>
+                            <span class="backgammon-board__circle"></span>
+                            <span class="backgammon-board__circle"></span>
+                        </div>
+                        <div class="backgammon-board__bone-four">
+                            <span class="backgammon-board__circle"></span>
+                            <span class="backgammon-board__circle"></span>
+                            <span class="backgammon-board__circle"></span>
+                            <span class="backgammon-board__circle"></span>
+                        </div>
+                        <div class="backgammon-board__bone-three">
+                            <span class="backgammon-board__circle"></span>
+                            <span class="backgammon-board__circle"></span>
+                            <span class="backgammon-board__circle"></span>
+                        </div>
+                        <div class="backgammon-board__bone-two">
+                            <span class="backgammon-board__circle"></span>
+                            <span class="backgammon-board__circle"></span>
+                        </div>
+                        <div class="backgammon-board__bone-one">
+                            <span class="backgammon-board__circle"></span>
+                        </div>
+                    </div>
+                    <div class="backgammon-board__bone bone-three">
+                        <div class="backgammon-board__bone-six">
+                            <span class="backgammon-board__circle"></span>
+                            <span class="backgammon-board__circle"></span>
+                            <span class="backgammon-board__circle"></span>
+                            <span class="backgammon-board__circle"></span>
+                            <span class="backgammon-board__circle"></span>
+                            <span class="backgammon-board__circle"></span>
+                        </div>
+                        <div class="backgammon-board__bone-five">
+                            <span class="backgammon-board__circle"></span>
+                            <span class="backgammon-board__circle"></span>
+                            <span class="backgammon-board__circle"></span>
+                            <span class="backgammon-board__circle"></span>
+                            <span class="backgammon-board__circle"></span>
+                        </div>
+                        <div class="backgammon-board__bone-four">
+                            <span class="backgammon-board__circle"></span>
+                            <span class="backgammon-board__circle"></span>
+                            <span class="backgammon-board__circle"></span>
+                            <span class="backgammon-board__circle"></span>
+                        </div>
+                        <div class="backgammon-board__bone-three">
+                            <span class="backgammon-board__circle"></span>
+                            <span class="backgammon-board__circle"></span>
+                            <span class="backgammon-board__circle"></span>
+                        </div>
+                        <div class="backgammon-board__bone-two">
+                            <span class="backgammon-board__circle"></span>
+                            <span class="backgammon-board__circle"></span>
+                        </div>
+                        <div class="backgammon-board__bone-one">
+                            <span class="backgammon-board__circle"></span>
+                        </div>
+                    </div>
+                    <div class="backgammon-board__btn"></div>
+                </div>
+                <div class="backgammon-board__points">
+                    <div class="backgammon-board__point"></div>
+                    <div class="backgammon-board__point"></div>
+                    <div class="backgammon-board__point drag-move"></div>
+                    <div class="backgammon-board__point"></div>
+                    <div class="backgammon-board__point"></div>
+                    <div class="backgammon-board__point"></div>
+                    <div class="backgammon-board__point selected-move"></div>
+                    <div class="backgammon-board__point"></div>
+                    <div class="backgammon-board__point"></div>
+                    <div class="backgammon-board__point"></div>
+                    <div class="backgammon-board__point"></div>
+                    <div class="backgammon-board__point"></div>
+                </div>
+                <div class="backgammon-board__main-shadow"></div>
+            </div>
+            <div class="backgammon-board__right">
+                <div class="backgammon-board__bones not-selected">
+                    <div class="backgammon-board__bone bone-five bone-translate">
+                        <div class="backgammon-board__bone-six">
+                            <span class="backgammon-board__circle"></span>
+                            <span class="backgammon-board__circle"></span>
+                            <span class="backgammon-board__circle"></span>
+                            <span class="backgammon-board__circle"></span>
+                            <span class="backgammon-board__circle"></span>
+                            <span class="backgammon-board__circle"></span>
+                        </div>
+                        <div class="backgammon-board__bone-five">
+                            <span class="backgammon-board__circle"></span>
+                            <span class="backgammon-board__circle"></span>
+                            <span class="backgammon-board__circle"></span>
+                            <span class="backgammon-board__circle"></span>
+                            <span class="backgammon-board__circle"></span>
+                        </div>
+                        <div class="backgammon-board__bone-four">
+                            <span class="backgammon-board__circle"></span>
+                            <span class="backgammon-board__circle"></span>
+                            <span class="backgammon-board__circle"></span>
+                            <span class="backgammon-board__circle"></span>
+                        </div>
+                        <div class="backgammon-board__bone-three">
+                            <span class="backgammon-board__circle"></span>
+                            <span class="backgammon-board__circle"></span>
+                            <span class="backgammon-board__circle"></span>
+                        </div>
+                        <div class="backgammon-board__bone-two">
+                            <span class="backgammon-board__circle"></span>
+                            <span class="backgammon-board__circle"></span>
+                        </div>
+                        <div class="backgammon-board__bone-one">
+                            <span class="backgammon-board__circle"></span>
+                        </div>
+                    </div>
+                    <div class="backgammon-board__bone bone-one">
+                        <div class="backgammon-board__bone-six">
+                            <span class="backgammon-board__circle"></span>
+                            <span class="backgammon-board__circle"></span>
+                            <span class="backgammon-board__circle"></span>
+                            <span class="backgammon-board__circle"></span>
+                            <span class="backgammon-board__circle"></span>
+                            <span class="backgammon-board__circle"></span>
+                        </div>
+                        <div class="backgammon-board__bone-five">
+                            <span class="backgammon-board__circle"></span>
+                            <span class="backgammon-board__circle"></span>
+                            <span class="backgammon-board__circle"></span>
+                            <span class="backgammon-board__circle"></span>
+                            <span class="backgammon-board__circle"></span>
+                        </div>
+                        <div class="backgammon-board__bone-four">
+                            <span class="backgammon-board__circle"></span>
+                            <span class="backgammon-board__circle"></span>
+                            <span class="backgammon-board__circle"></span>
+                            <span class="backgammon-board__circle"></span>
+                        </div>
+                        <div class="backgammon-board__bone-three">
+                            <span class="backgammon-board__circle"></span>
+                            <span class="backgammon-board__circle"></span>
+                            <span class="backgammon-board__circle"></span>
+                        </div>
+                        <div class="backgammon-board__bone-two">
+                            <span class="backgammon-board__circle"></span>
+                            <span class="backgammon-board__circle"></span>
+                        </div>
+                        <div class="backgammon-board__bone-one">
+                            <span class="backgammon-board__circle"></span>
+                        </div>
+                    </div>
+                    <div class="backgammon-board__btn"></div>
+                </div>
+                <div class="backgammon-board__points">
+                    <div class="backgammon-board__point"></div>
+                    <div class="backgammon-board__point"></div>
+                    <div class="backgammon-board__point drag-move"></div>
+                    <div class="backgammon-board__point"></div>
+                    <div class="backgammon-board__point"></div>
+                    <div class="backgammon-board__point "></div>
+                    <div class="backgammon-board__point selected-move"></div>
+                    <div class="backgammon-board__point"></div>
+                    <div class="backgammon-board__point"></div>
+                    <div class="backgammon-board__point"></div>
+                    <div class="backgammon-board__point"></div>
+                    <div class="backgammon-board__point"></div>
+                </div>
+                <div class="backgammon-board__main-shadow"></div>
+            </div>
+            <div class="backgammon-board__bornes">
+                <div class="backgammon-board__borne selected-move">
+                    <div class="backgammon-board__retired-piece black-piece"></div>
+                    <div class="backgammon-board__retired-piece black-piece"></div>
+                    <div class="backgammon-board__retired-piece black-piece"></div>
+                    <div class="backgammon-board__retired-piece black-piece"></div>
+                    <div class="backgammon-board__retired-piece black-piece"></div>
+                    <div class="backgammon-board__retired-piece black-piece"></div>
+                </div>
+                <div class="backgammon-board__double-cube">1</div>
+                <div class="backgammon-board__borne drag-move">
+                    <div class="backgammon-board__retired-piece white-piece"></div>
+                    <div class="backgammon-board__retired-piece white-piece"></div>
+                    <div class="backgammon-board__retired-piece white-piece"></div>
+                    <div class="backgammon-board__retired-piece white-piece"></div>
+                    <div class="backgammon-board__retired-piece white-piece"></div>
+                    <div class="backgammon-board__retired-piece white-piece"></div>
+                    <div class="backgammon-board__retired-piece white-piece"></div>
+                    <div class="backgammon-board__retired-piece white-piece"></div>
+                    <div class="backgammon-board__retired-piece white-piece"></div>
+                    <div class="backgammon-board__retired-piece white-piece"></div>
+                    <div class="backgammon-board__retired-piece white-piece"></div>
+                    <div class="backgammon-board__retired-piece white-piece"></div>
+                    <div class="backgammon-board__retired-piece white-piece"></div>
+                    <div class="backgammon-board__retired-piece white-piece"></div>
+                </div>
+            </div>
+            <div class="backgammon-board__bars">
+                <div class="backgammon-board__bar">
+                </div>
+                <div class="backgammon-board__bar">
+                </div>
+            </div>
+            <div class="backgammon-board__pips">
+                <div class="backgammon-board__pip-count">
+                    <span class="backgammon-board__pip"></span>
+                    <span class="backgammon-board__number">167</span>
+                </div>
+                <div class="backgammon-board__pip-count">
+                    <span class="backgammon-board__number">167</span>
+                    <span class="backgammon-board__pip"></span>
+                </div>
+            </div>
+            <div class="backgammon-board__pieces">
+                <div class="backgammon-board__piece white-piece"></div>
+                <div class="backgammon-board__piece white-piece"></div>
+                <div class="backgammon-board__piece white-piece"></div>
+                <div class="backgammon-board__piece white-piece"></div>
+                <div class="backgammon-board__piece white-piece move-piece"></div>
+                <div class="backgammon-board__piece black-piece"></div>
+                <div class="backgammon-board__piece black-piece"></div>
+                <div class="backgammon-board__piece black-piece"></div>
+                <div class="backgammon-board__piece black-piece"></div>
+                <div class="backgammon-board__piece black-piece"></div>
+                <div class="backgammon-board__piece black-piece"></div>
+                <div class="backgammon-board__piece white-piece"></div>
+<!--                <div class="backgammon-board__piece"></div>-->
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

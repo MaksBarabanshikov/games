@@ -1,0 +1,249 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>calcPercent</title>
+
+    <link rel="stylesheet" href="./index.css">
+
+</head>
+<body>
+<div class="game__main">
+    <div class="game__container">
+        <div class="game__percent-field percent-field">
+            <div class="percent-field__panel">
+                <form class="percent-field__form" action="#">
+                    <fieldset>
+                        <label class="percent-field__label">
+                                <span class="percent-field__text">
+                                    What is
+                                </span>
+                            <input class="percent-field__input"/>
+                        </label>
+                        <label class="percent-field__label">
+                                <span class="percent-field__text">
+                                   % of
+                                </span>
+                            <input class="percent-field__input"/>
+                        </label>
+                    </fieldset>
+                    <fieldset>
+                        <button type="submit" class="percent-field__button">
+                            Calculate
+                        </button>
+                        <button class="percent-field__button button-clear">
+                            <i class="fa-solid fa-eraser">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                    <path d="M480 416C497.7 416 512 430.3 512 448C512 465.7 497.7 480 480 480H150.6C133.7 480 117.4 473.3 105.4 461.3L25.37 381.3C.3786 356.3 .3786
+                                315.7 25.37 290.7L258.7 57.37C283.7 32.38 324.3 32.38 349.3 57.37L486.6 194.7C511.6 219.7 511.6 260.3 486.6 285.3L355.9 416H480zM265.4 416L332.7
+                                348.7L195.3 211.3L70.63 336L150.6 416L265.4 416z"
+                                    />
+                                </svg>
+                            </i>
+                        </button>
+
+                        <input type="text" readonly>
+                    </fieldset>
+                </form>
+            </div>
+
+            <div class="percent-field__panel">
+                <form class="percent-field__form" action="#">
+                    <fieldset>
+                        <label class="percent-field__label">
+                            <input class="percent-field__input"/>
+                        </label>
+                        <label class="percent-field__label">
+                                <span class="percent-field__text">
+                                   is what percent of
+                                </span>
+                            <input class="percent-field__input"/>
+                        </label>
+                    </fieldset>
+                    <fieldset>
+                        <button type="submit" class="percent-field__button">
+                            Calculate
+                        </button>
+                        <button class="percent-field__button button-clear">
+                            <i class="fa-solid fa-eraser">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                    <path d="M480 416C497.7 416 512 430.3 512 448C512 465.7 497.7 480 480 480H150.6C133.7 480 117.4 473.3 105.4 461.3L25.37 381.3C.3786 356.3 .3786
+                                315.7 25.37 290.7L258.7 57.37C283.7 32.38 324.3 32.38 349.3 57.37L486.6 194.7C511.6 219.7 511.6 260.3 486.6 285.3L355.9 416H480zM265.4 416L332.7
+                                348.7L195.3 211.3L70.63 336L150.6 416L265.4 416z"
+                                    />
+                                </svg>
+                            </i>
+                        </button>
+                        <label class="percent-field__label">
+                            <input type="text" readonly>
+                            <span class="percent-field__percent">
+                                %
+                            </span>
+                        </label>
+
+                    </fieldset>
+                </form>
+            </div>
+
+            <div class="percent-field__panel">
+                <p class="percent-field__title">
+                    What is the percentage increase/decrease
+                </p>
+                <form class="percent-field__form" action="#">
+                    <fieldset>
+                        <label class="percent-field__label">
+                            <span class="percent-field__text">
+                                From
+                            </span>
+                            <input class="percent-field__input"/>
+                        </label>
+                        <label class="percent-field__label">
+                                <span class="percent-field__text">
+                                   to
+                                </span>
+                            <input class="percent-field__input"/>
+                        </label>
+                    </fieldset>
+                    <fieldset>
+                        <button type="submit" class="percent-field__button">
+                            Calculate
+                        </button>
+                        <button class="percent-field__button button-clear">
+                            <i class="fa-solid fa-eraser">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                    <path d="M480 416C497.7 416 512 430.3 512 448C512 465.7 497.7 480 480 480H150.6C133.7 480 117.4 473.3 105.4 461.3L25.37 381.3C.3786 356.3 .3786
+                                315.7 25.37 290.7L258.7 57.37C283.7 32.38 324.3 32.38 349.3 57.37L486.6 194.7C511.6 219.7 511.6 260.3 486.6 285.3L355.9 416H480zM265.4 416L332.7
+                                348.7L195.3 211.3L70.63 336L150.6 416L265.4 416z"
+                                    />
+                                </svg>
+                            </i>
+                        </button>
+                        <label class="percent-field__label">
+                            <input type="text" readonly>
+                            <span class="percent-field__percent">
+                                %
+                            </span>
+                        </label>
+
+                    </fieldset>
+                </form>
+            </div>
+
+            <div class="percent-field__panel">
+                <form class="percent-field__form" action="#">
+                    <fieldset>
+                        <label class="percent-field__label">
+                                <span class="percent-field__text">
+                                    Add
+                                </span>
+                            <input class="percent-field__input"/>
+                        </label>
+                        <label class="percent-field__label">
+                                <span class="percent-field__text">
+                                   % to the number
+                                </span>
+                            <input class="percent-field__input"/>
+                        </label>
+                    </fieldset>
+                    <fieldset>
+                        <button type="submit" class="percent-field__button">
+                            Calculate
+                        </button>
+                        <button class="percent-field__button button-clear">
+                            <i class="fa-solid fa-eraser">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                    <path d="M480 416C497.7 416 512 430.3 512 448C512 465.7 497.7 480 480 480H150.6C133.7 480 117.4 473.3 105.4 461.3L25.37 381.3C.3786 356.3 .3786
+                                315.7 25.37 290.7L258.7 57.37C283.7 32.38 324.3 32.38 349.3 57.37L486.6 194.7C511.6 219.7 511.6 260.3 486.6 285.3L355.9 416H480zM265.4 416L332.7
+                                348.7L195.3 211.3L70.63 336L150.6 416L265.4 416z"
+                                    />
+                                </svg>
+                            </i>
+                        </button>
+
+                        <input type="text" readonly>
+                    </fieldset>
+                </form>
+            </div>
+
+            <div class="percent-field__panel">
+                <form class="percent-field__form" action="#">
+                    <fieldset>
+                        <label class="percent-field__label">
+                                <span class="percent-field__text">
+                                    Subtract
+                                </span>
+                            <input class="percent-field__input"/>
+                        </label>
+                        <label class="percent-field__label">
+                                <span class="percent-field__text">
+                                   % from the number
+                                </span>
+                            <input class="percent-field__input"/>
+                        </label>
+                    </fieldset>
+                    <fieldset>
+                        <button type="submit" class="percent-field__button">
+                            Calculate
+                        </button>
+                        <button class="percent-field__button button-clear">
+                            <i class="fa-solid fa-eraser">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                    <path d="M480 416C497.7 416 512 430.3 512 448C512 465.7 497.7 480 480 480H150.6C133.7 480 117.4 473.3 105.4 461.3L25.37 381.3C.3786 356.3 .3786
+                                315.7 25.37 290.7L258.7 57.37C283.7 32.38 324.3 32.38 349.3 57.37L486.6 194.7C511.6 219.7 511.6 260.3 486.6 285.3L355.9 416H480zM265.4 416L332.7
+                                348.7L195.3 211.3L70.63 336L150.6 416L265.4 416z"
+                                    />
+                                </svg>
+                            </i>
+                        </button>
+
+                        <input type="text" readonly>
+                    </fieldset>
+                </form>
+            </div>
+
+            <div class="percent-field__panel">
+                <form class="percent-field__form" action="#">
+                    <fieldset>
+                        <label class="percent-field__label">
+                            <input class="percent-field__input"/>
+                            <span class="percent-field__text">
+                                is
+                            </span>
+                        </label>
+                        <label class="percent-field__label">
+                            <input class="percent-field__input"/>
+                            <span class="percent-field__text">
+                                of what
+                            </span>
+                        </label>
+                    </fieldset>
+                    <fieldset>
+                        <button type="submit" class="percent-field__button">
+                            Calculate
+                        </button>
+                        <button class="percent-field__button button-clear">
+                            <i class="fa-solid fa-eraser">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                    <path d="M480 416C497.7 416 512 430.3 512 448C512 465.7 497.7 480 480 480H150.6C133.7 480 117.4 473.3 105.4 461.3L25.37 381.3C.3786 356.3 .3786
+                                315.7 25.37 290.7L258.7 57.37C283.7 32.38 324.3 32.38 349.3 57.37L486.6 194.7C511.6 219.7 511.6 260.3 486.6 285.3L355.9 416H480zM265.4 416L332.7
+                                348.7L195.3 211.3L70.63 336L150.6 416L265.4 416z"
+                                    />
+                                </svg>
+                            </i>
+                        </button>
+                        <label class="percent-field__label">
+                            <input type="text" readonly>
+                        </label>
+
+                    </fieldset>
+                </form>
+            </div>
+
+        </div>
+    </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,728 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Piano</title>
+    <link rel="stylesheet" href="//pro.fontawesome.com/releases/v5.10.1/css/all.css"
+          integrity="sha384-y++enYq9sdV7msNmXr08kJdkX4zEI1gMjjkw0l9ttOepH7fMdhb7CePwuRQCfwCr" crossorigin="anonymous">
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div class="game__main">
+        <div class="game__container">
+            <div class="game__piano-field piano-field">
+                <div data-note="C" class="piano-field__note white">
+                    <div class="piano-field__keytext">C</div>
+                    <div class="piano-field__keytext-sub">1</div>
+                </div>
+                <div data-note="Db" class="piano-field__note black">
+                    <div class="piano-field__keytext">C#</div>
+                    <div class="piano-field__keytext-sub">1</div>
+                </div>
+                <div data-note="D" class="piano-field__note white">
+                    <div class="piano-field__keytext">D</div>
+                    <div class="piano-field__keytext-sub">2</div>
+                </div>
+                <div data-note="Eb" class="piano-field__note black">
+                    <div class="piano-field__keytext">D#</div>
+                    <div class="piano-field__keytext-sub">2</div>
+                </div>
+                <div data-note="E" class="piano-field__note white">
+                    <div class="piano-field__keytext">E</div>
+                    <div class="piano-field__keytext-sub">3</div>
+                </div>
+                <div data-note="F" class="piano-field__note white">
+                    <div class="piano-field__keytext">F</div>
+                    <div class="piano-field__keytext-sub">4</div>
+                </div>
+                <div data-note="Gb" class="piano-field__note black">
+                    <div class="piano-field__keytext">F#</div>
+                    <div class="piano-field__keytext-sub">4</div>
+                </div>
+                <div data-note="G" class="piano-field__note white">
+                    <div class="piano-field__keytext">G</div>
+                    <div class="piano-field__keytext-sub">5</div>
+                </div>
+                <div data-note="Ab" class="piano-field__note black">
+                    <div class="piano-field__keytext">G#</div>
+                    <div class="piano-field__keytext-sub">5</div>
+                </div>
+                <div data-note="A" class="piano-field__note white">
+                    <div class="piano-field__keytext">A</div>
+                    <div class="piano-field__keytext-sub">6</div>
+                </div>
+                <div data-note="Bb" class="piano-field__note black">
+                    <div class="piano-field__keytext">A#</div>
+                    <div class="piano-field__keytext-sub">6</div>
+                </div>
+                <div data-note="B" class="piano-field__note white">
+                    <div class="piano-field__keytext">B</div>
+                    <div class="piano-field__keytext-sub">7</div>
+                </div>
+                <div data-note="C" class="piano-field__note white">
+                    <div class="piano-field__keytext">C</div>
+                    <div class="piano-field__keytext-sub">8</div>
+                </div>
+                <div data-note="Db" class="piano-field__note black">
+                    <div class="piano-field__keytext">C#</div>
+                    <div class="piano-field__keytext-sub">8</div>
+                </div>
+                <div data-note="D" class="piano-field__note white">
+                    <div class="piano-field__keytext">D</div>
+                    <div class="piano-field__keytext-sub">9</div>
+                </div>
+                <div data-note="Eb" class="piano-field__note black">
+                    <div class="piano-field__keytext">D#</div>
+                    <div class="piano-field__keytext-sub">9</div>
+                </div>
+                <div data-note="E" class="piano-field__note white">
+                    <div class="piano-field__keytext">E</div>
+                    <div class="piano-field__keytext-sub">0</div>
+                </div>
+                <div data-note="F" class="piano-field__note white">
+                    <div class="piano-field__keytext">F</div>
+                    <div class="piano-field__keytext-sub font">q</div>
+                </div>
+                <div data-note="Gb" class="piano-field__note black">
+                    <div class="piano-field__keytext">F#</div>
+                    <div class="piano-field__keytext-sub font">q</div>
+                </div>
+                <div data-note="G" class="piano-field__note white">
+                    <div class="piano-field__keytext">G</div>
+                    <div class="piano-field__keytext-sub font">w</div>
+                </div>
+                <div data-note="Ab" class="piano-field__note black">
+                    <div class="piano-field__keytext">G#</div>
+                    <div class="piano-field__keytext-sub font">w</div>
+                </div>
+                <div data-note="A" class="piano-field__note white">
+                    <div class="piano-field__keytext">A</div>
+                    <div class="piano-field__keytext-sub font">e</div>
+                </div>
+                <div data-note="Bb" class="piano-field__note black">
+                    <div class="piano-field__keytext">A#</div>
+                    <div class="piano-field__keytext-sub font">e</div>
+                </div>
+                <div data-note="B" class="piano-field__note white">
+                    <div class="piano-field__keytext">B</div>
+                    <div class="piano-field__keytext-sub font">r</div>
+                </div>
+                <div data-note="C" class="piano-field__note white">
+                    <div class="piano-field__keytext">C</div>
+                    <div class="piano-field__keytext-sub">t</div>
+                </div>
+            </div>
+            <div class="game__piano-field piano-field six-black">
+                <div data-note="C" class="piano-field__note white">
+                    <div class="piano-field__keytext">C</div>
+                    <div class="piano-field__keytext-sub">1</div>
+                </div>
+                <div data-note="Db" class="piano-field__note black">
+                    <div class="piano-field__keytext">C#</div>
+                    <div class="piano-field__keytext-sub">1</div>
+                </div>
+                <div data-note="D" class="piano-field__note white">
+                    <div class="piano-field__keytext">D</div>
+                    <div class="piano-field__keytext-sub">2</div>
+                </div>
+                <div data-note="Eb" class="piano-field__note black">
+                    <div class="piano-field__keytext">D#</div>
+                    <div class="piano-field__keytext-sub">2</div>
+                </div>
+                <div data-note="E" class="piano-field__note white">
+                    <div class="piano-field__keytext">E</div>
+                    <div class="piano-field__keytext-sub">3</div>
+                </div>
+                <div data-note="F" class="piano-field__note white">
+                    <div class="piano-field__keytext">F</div>
+                    <div class="piano-field__keytext-sub">4</div>
+                </div>
+                <div data-note="Gb" class="piano-field__note black">
+                    <div class="piano-field__keytext">F#</div>
+                    <div class="piano-field__keytext-sub">4</div>
+                </div>
+                <div data-note="G" class="piano-field__note white">
+                    <div class="piano-field__keytext">G</div>
+                    <div class="piano-field__keytext-sub">5</div>
+                </div>
+                <div data-note="Ab" class="piano-field__note black">
+                    <div class="piano-field__keytext">G#</div>
+                    <div class="piano-field__keytext-sub">5</div>
+                </div>
+                <div data-note="A" class="piano-field__note white">
+                    <div class="piano-field__keytext">A</div>
+                    <div class="piano-field__keytext-sub">6</div>
+                </div>
+                <div data-note="Bb" class="piano-field__note black">
+                    <div class="piano-field__keytext">A#</div>
+                    <div class="piano-field__keytext-sub">6</div>
+                </div>
+                <div data-note="B" class="piano-field__note white">
+                    <div class="piano-field__keytext">B</div>
+                    <div class="piano-field__keytext-sub">7</div>
+                </div>
+                <div data-note="C" class="piano-field__note white">
+                    <div class="piano-field__keytext">C</div>
+                    <div class="piano-field__keytext-sub">8</div>
+                </div>
+                <div data-note="Db" class="piano-field__note black">
+                    <div class="piano-field__keytext">C#</div>
+                    <div class="piano-field__keytext-sub">8</div>
+                </div>
+                <div data-note="D" class="piano-field__note white">
+                    <div class="piano-field__keytext">D</div>
+                    <div class="piano-field__keytext-sub">9</div>
+                </div>
+                <div data-note="Eb" class="piano-field__note black">
+                    <div class="piano-field__keytext">D#</div>
+                    <div class="piano-field__keytext-sub">9</div>
+                </div>
+                <div data-note="E" class="piano-field__note white">
+                    <div class="piano-field__keytext">E</div>
+                    <div class="piano-field__keytext-sub">0</div>
+                </div>
+                <div data-note="F" class="piano-field__note white">
+                    <div class="piano-field__keytext">F</div>
+                    <div class="piano-field__keytext-sub font">q</div>
+                </div>
+                <div data-note="Gb" class="piano-field__note black">
+                    <div class="piano-field__keytext">F#</div>
+                    <div class="piano-field__keytext-sub font">q</div>
+                </div>
+                <div data-note="G" class="piano-field__note white">
+                    <div class="piano-field__keytext">G</div>
+                    <div class="piano-field__keytext-sub font">w</div>
+                </div>
+                <div data-note="Ab" class="piano-field__note black">
+                    <div class="piano-field__keytext">G#</div>
+                    <div class="piano-field__keytext-sub font">w</div>
+                </div>
+                <div data-note="A" class="piano-field__note white">
+                    <div class="piano-field__keytext">A</div>
+                    <div class="piano-field__keytext-sub font">e</div>
+                </div>
+                <div data-note="Bb" class="piano-field__note black">
+                    <div class="piano-field__keytext">A#</div>
+                    <div class="piano-field__keytext-sub font">e</div>
+                </div>
+                <div data-note="B" class="piano-field__note white">
+                    <div class="piano-field__keytext">B</div>
+                    <div class="piano-field__keytext-sub font">r</div>
+                </div>
+                <div data-note="C" class="piano-field__note white">
+                    <div class="piano-field__keytext">C</div>
+                    <div class="piano-field__keytext-sub font">t</div>
+                </div>
+                <div data-note="Db" class="piano-field__note black">
+                    <div class="piano-field__keytext">C#</div>
+                    <div class="piano-field__keytext-sub">t</div>
+                </div>
+                <div data-note="D" class="piano-field__note white">
+                    <div class="piano-field__keytext">D</div>
+                    <div class="piano-field__keytext-sub">y</div>
+                </div>
+                <div data-note="Eb" class="piano-field__note black">
+                    <div class="piano-field__keytext">D#</div>
+                    <div class="piano-field__keytext-sub">y</div>
+                </div>
+                <div data-note="E" class="piano-field__note white">
+                    <div class="piano-field__keytext">E</div>
+                    <div class="piano-field__keytext-sub">u</div>
+                </div>
+                <div data-note="F" class="piano-field__note white">
+                    <div class="piano-field__keytext">F</div>
+                    <div class="piano-field__keytext-sub">i</div>
+                </div>
+                <div data-note="Gb" class="piano-field__note black">
+                    <div class="piano-field__keytext">F#</div>
+                    <div class="piano-field__keytext-sub">i</div>
+                </div>
+                <div data-note="G" class="piano-field__note white">
+                    <div class="piano-field__keytext">G</div>
+                    <div class="piano-field__keytext-sub">o</div>
+                </div>
+                <div data-note="Ab" class="piano-field__note black">
+                    <div class="piano-field__keytext">G#</div>
+                    <div class="piano-field__keytext-sub">o</div>
+                </div>
+                <div data-note="A" class="piano-field__note white">
+                    <div class="piano-field__keytext">A</div>
+                    <div class="piano-field__keytext-sub">p</div>
+                </div>
+                <div data-note="Bb" class="piano-field__note black">
+                    <div class="piano-field__keytext">A#</div>
+                    <div class="piano-field__keytext-sub">p</div>
+                </div>
+                <div data-note="B" class="piano-field__note white">
+                    <div class="piano-field__keytext">B</div>
+                    <div class="piano-field__keytext-sub">a</div>
+                </div>
+                <div data-note="C" class="piano-field__note white">
+                    <div class="piano-field__keytext">C</div>
+                    <div class="piano-field__keytext-sub">s</div>
+                </div>
+            </div>
+            <div class="game__piano-field piano-field eight-black">
+                <div data-note="C" class="piano-field__note white">
+                    <div class="piano-field__keytext">C</div>
+                    <div class="piano-field__keytext-sub">1</div>
+                </div>
+                <div data-note="Db" class="piano-field__note black">
+                    <div class="piano-field__keytext">C#</div>
+                    <div class="piano-field__keytext-sub">1</div>
+                </div>
+                <div data-note="D" class="piano-field__note white">
+                    <div class="piano-field__keytext">D</div>
+                    <div class="piano-field__keytext-sub">2</div>
+                </div>
+                <div data-note="Eb" class="piano-field__note black">
+                    <div class="piano-field__keytext">D#</div>
+                    <div class="piano-field__keytext-sub">2</div>
+                </div>
+                <div data-note="E" class="piano-field__note white">
+                    <div class="piano-field__keytext">E</div>
+                    <div class="piano-field__keytext-sub">3</div>
+                </div>
+                <div data-note="F" class="piano-field__note white">
+                    <div class="piano-field__keytext">F</div>
+                    <div class="piano-field__keytext-sub">4</div>
+                </div>
+                <div data-note="Gb" class="piano-field__note black">
+                    <div class="piano-field__keytext">F#</div>
+                    <div class="piano-field__keytext-sub">4</div>
+                </div>
+                <div data-note="G" class="piano-field__note white">
+                    <div class="piano-field__keytext">G</div>
+                    <div class="piano-field__keytext-sub">5</div>
+                </div>
+                <div data-note="Ab" class="piano-field__note black">
+                    <div class="piano-field__keytext">G#</div>
+                    <div class="piano-field__keytext-sub">5</div>
+                </div>
+                <div data-note="A" class="piano-field__note white">
+                    <div class="piano-field__keytext">A</div>
+                    <div class="piano-field__keytext-sub">6</div>
+                </div>
+                <div data-note="Bb" class="piano-field__note black">
+                    <div class="piano-field__keytext">A#</div>
+                    <div class="piano-field__keytext-sub">6</div>
+                </div>
+                <div data-note="B" class="piano-field__note white">
+                    <div class="piano-field__keytext">B</div>
+                    <div class="piano-field__keytext-sub">7</div>
+                </div>
+                <div data-note="C" class="piano-field__note white">
+                    <div class="piano-field__keytext">C</div>
+                    <div class="piano-field__keytext-sub">8</div>
+                </div>
+                <div data-note="Db" class="piano-field__note black">
+                    <div class="piano-field__keytext">C#</div>
+                    <div class="piano-field__keytext-sub">8</div>
+                </div>
+                <div data-note="D" class="piano-field__note white">
+                    <div class="piano-field__keytext">D</div>
+                    <div class="piano-field__keytext-sub">9</div>
+                </div>
+                <div data-note="Eb" class="piano-field__note black">
+                    <div class="piano-field__keytext">D#</div>
+                    <div class="piano-field__keytext-sub">9</div>
+                </div>
+                <div data-note="E" class="piano-field__note white">
+                    <div class="piano-field__keytext">E</div>
+                    <div class="piano-field__keytext-sub">0</div>
+                </div>
+                <div data-note="F" class="piano-field__note white">
+                    <div class="piano-field__keytext">F</div>
+                    <div class="piano-field__keytext-sub font">q</div>
+                </div>
+                <div data-note="Gb" class="piano-field__note black">
+                    <div class="piano-field__keytext">F#</div>
+                    <div class="piano-field__keytext-sub font">q</div>
+                </div>
+                <div data-note="G" class="piano-field__note white">
+                    <div class="piano-field__keytext">G</div>
+                    <div class="piano-field__keytext-sub font">w</div>
+                </div>
+                <div data-note="Ab" class="piano-field__note black">
+                    <div class="piano-field__keytext">G#</div>
+                    <div class="piano-field__keytext-sub font">w</div>
+                </div>
+                <div data-note="A" class="piano-field__note white">
+                    <div class="piano-field__keytext">A</div>
+                    <div class="piano-field__keytext-sub font">e</div>
+                </div>
+                <div data-note="Bb" class="piano-field__note black">
+                    <div class="piano-field__keytext">A#</div>
+                    <div class="piano-field__keytext-sub font">e</div>
+                </div>
+                <div data-note="B" class="piano-field__note white">
+                    <div class="piano-field__keytext">B</div>
+                    <div class="piano-field__keytext-sub font">r</div>
+                </div>
+                <div data-note="C" class="piano-field__note white">
+                    <div class="piano-field__keytext">C</div>
+                    <div class="piano-field__keytext-sub font">t</div>
+                </div>
+                <div data-note="Db" class="piano-field__note black">
+                    <div class="piano-field__keytext">C#</div>
+                    <div class="piano-field__keytext-sub">t</div>
+                </div>
+                <div data-note="D" class="piano-field__note white">
+                    <div class="piano-field__keytext">D</div>
+                    <div class="piano-field__keytext-sub">y</div>
+                </div>
+                <div data-note="Eb" class="piano-field__note black">
+                    <div class="piano-field__keytext">D#</div>
+                    <div class="piano-field__keytext-sub">y</div>
+                </div>
+                <div data-note="E" class="piano-field__note white">
+                    <div class="piano-field__keytext">E</div>
+                    <div class="piano-field__keytext-sub">u</div>
+                </div>
+                <div data-note="F" class="piano-field__note white">
+                    <div class="piano-field__keytext">F</div>
+                    <div class="piano-field__keytext-sub">i</div>
+                </div>
+                <div data-note="Gb" class="piano-field__note black">
+                    <div class="piano-field__keytext">F#</div>
+                    <div class="piano-field__keytext-sub">i</div>
+                </div>
+                <div data-note="G" class="piano-field__note white">
+                    <div class="piano-field__keytext">G</div>
+                    <div class="piano-field__keytext-sub">o</div>
+                </div>
+                <div data-note="Ab" class="piano-field__note black">
+                    <div class="piano-field__keytext">G#</div>
+                    <div class="piano-field__keytext-sub">o</div>
+                </div>
+                <div data-note="A" class="piano-field__note white">
+                    <div class="piano-field__keytext">A</div>
+                    <div class="piano-field__keytext-sub">p</div>
+                </div>
+                <div data-note="Bb" class="piano-field__note black">
+                    <div class="piano-field__keytext">A#</div>
+                    <div class="piano-field__keytext-sub">p</div>
+                </div>
+                <div data-note="B" class="piano-field__note white">
+                    <div class="piano-field__keytext">B</div>
+                    <div class="piano-field__keytext-sub">a</div>
+                </div>
+                <div data-note="C" class="piano-field__note white">
+                    <div class="piano-field__keytext">C</div>
+                    <div class="piano-field__keytext-sub">s</div>
+                </div>
+                <div data-note="Db" class="piano-field__note black">
+                    <div class="piano-field__keytext">C#</div>
+                    <div class="piano-field__keytext-sub">s</div>
+                </div>
+                <div data-note="D" class="piano-field__note white">
+                    <div class="piano-field__keytext">D</div>
+                    <div class="piano-field__keytext-sub">d</div>
+                </div>
+                <div data-note="Eb" class="piano-field__note black">
+                    <div class="piano-field__keytext">D#</div>
+                    <div class="piano-field__keytext-sub">d</div>
+                </div>
+                <div data-note="E" class="piano-field__note white">
+                    <div class="piano-field__keytext">E</div>
+                    <div class="piano-field__keytext-sub">f</div>
+                </div>
+                <div data-note="F" class="piano-field__note white">
+                    <div class="piano-field__keytext">F</div>
+                    <div class="piano-field__keytext-sub">g</div>
+                </div>
+                <div data-note="Gb" class="piano-field__note black">
+                    <div class="piano-field__keytext">F#</div>
+                    <div class="piano-field__keytext-sub">g</div>
+                </div>
+                <div data-note="G" class="piano-field__note white">
+                    <div class="piano-field__keytext">G</div>
+                    <div class="piano-field__keytext-sub">h</div>
+                </div>
+                <div data-note="Ab" class="piano-field__note black">
+                    <div class="piano-field__keytext">G#</div>
+                    <div class="piano-field__keytext-sub">h</div>
+                </div>
+                <div data-note="A" class="piano-field__note white">
+                    <div class="piano-field__keytext">A</div>
+                    <div class="piano-field__keytext-sub">j</div>
+                </div>
+                <div data-note="Bb" class="piano-field__note black">
+                    <div class="piano-field__keytext">A#</div>
+                    <div class="piano-field__keytext-sub">j</div>
+                </div>
+                <div data-note="B" class="piano-field__note white">
+                    <div class="piano-field__keytext">B</div>
+                    <div class="piano-field__keytext-sub">k</div>
+                </div>
+                <div data-note="C" class="piano-field__note white">
+                    <div class="piano-field__keytext">C</div>
+                    <div class="piano-field__keytext-sub">l</div>
+                </div>
+            </div>
+            <div class="game__piano-field piano-field ten-black">
+                <div data-note="C" class="piano-field__note white">
+                    <div class="piano-field__keytext">C</div>
+                    <div class="piano-field__keytext-sub">1</div>
+                </div>
+                <div data-note="Db" class="piano-field__note black">
+                    <div class="piano-field__keytext">C#</div>
+                    <div class="piano-field__keytext-sub">1</div>
+                </div>
+                <div data-note="D" class="piano-field__note white">
+                    <div class="piano-field__keytext">D</div>
+                    <div class="piano-field__keytext-sub">2</div>
+                </div>
+                <div data-note="Eb" class="piano-field__note black">
+                    <div class="piano-field__keytext">D#</div>
+                    <div class="piano-field__keytext-sub">2</div>
+                </div>
+                <div data-note="E" class="piano-field__note white">
+                    <div class="piano-field__keytext">E</div>
+                    <div class="piano-field__keytext-sub">3</div>
+                </div>
+                <div data-note="F" class="piano-field__note white">
+                    <div class="piano-field__keytext">F</div>
+                    <div class="piano-field__keytext-sub">4</div>
+                </div>
+                <div data-note="Gb" class="piano-field__note black">
+                    <div class="piano-field__keytext">F#</div>
+                    <div class="piano-field__keytext-sub">4</div>
+                </div>
+                <div data-note="G" class="piano-field__note white">
+                    <div class="piano-field__keytext">G</div>
+                    <div class="piano-field__keytext-sub">5</div>
+                </div>
+                <div data-note="Ab" class="piano-field__note black">
+                    <div class="piano-field__keytext">G#</div>
+                    <div class="piano-field__keytext-sub">5</div>
+                </div>
+                <div data-note="A" class="piano-field__note white">
+                    <div class="piano-field__keytext">A</div>
+                    <div class="piano-field__keytext-sub">6</div>
+                </div>
+                <div data-note="Bb" class="piano-field__note black">
+                    <div class="piano-field__keytext">A#</div>
+                    <div class="piano-field__keytext-sub">6</div>
+                </div>
+                <div data-note="B" class="piano-field__note white">
+                    <div class="piano-field__keytext">B</div>
+                    <div class="piano-field__keytext-sub">7</div>
+                </div>
+                <div data-note="C" class="piano-field__note white">
+                    <div class="piano-field__keytext">C</div>
+                    <div class="piano-field__keytext-sub">8</div>
+                </div>
+                <div data-note="Db" class="piano-field__note black">
+                    <div class="piano-field__keytext">C#</div>
+                    <div class="piano-field__keytext-sub">8</div>
+                </div>
+                <div data-note="D" class="piano-field__note white">
+                    <div class="piano-field__keytext">D</div>
+                    <div class="piano-field__keytext-sub">9</div>
+                </div>
+                <div data-note="Eb" class="piano-field__note black">
+                    <div class="piano-field__keytext">D#</div>
+                    <div class="piano-field__keytext-sub">9</div>
+                </div>
+                <div data-note="E" class="piano-field__note white">
+                    <div class="piano-field__keytext">E</div>
+                    <div class="piano-field__keytext-sub">0</div>
+                </div>
+                <div data-note="F" class="piano-field__note white">
+                    <div class="piano-field__keytext">F</div>
+                    <div class="piano-field__keytext-sub font">q</div>
+                </div>
+                <div data-note="Gb" class="piano-field__note black">
+                    <div class="piano-field__keytext">F#</div>
+                    <div class="piano-field__keytext-sub font">q</div>
+                </div>
+                <div data-note="G" class="piano-field__note white">
+                    <div class="piano-field__keytext">G</div>
+                    <div class="piano-field__keytext-sub font">w</div>
+                </div>
+                <div data-note="Ab" class="piano-field__note black">
+                    <div class="piano-field__keytext">G#</div>
+                    <div class="piano-field__keytext-sub font">w</div>
+                </div>
+                <div data-note="A" class="piano-field__note white">
+                    <div class="piano-field__keytext">A</div>
+                    <div class="piano-field__keytext-sub font">e</div>
+                </div>
+                <div data-note="Bb" class="piano-field__note black">
+                    <div class="piano-field__keytext">A#</div>
+                    <div class="piano-field__keytext-sub font">e</div>
+                </div>
+                <div data-note="B" class="piano-field__note white">
+                    <div class="piano-field__keytext">B</div>
+                    <div class="piano-field__keytext-sub font">r</div>
+                </div>
+                <div data-note="C" class="piano-field__note white">
+                    <div class="piano-field__keytext">C</div>
+                    <div class="piano-field__keytext-sub font">t</div>
+                </div>
+                <div data-note="Db" class="piano-field__note black">
+                    <div class="piano-field__keytext">C#</div>
+                    <div class="piano-field__keytext-sub">t</div>
+                </div>
+                <div data-note="D" class="piano-field__note white">
+                    <div class="piano-field__keytext">D</div>
+                    <div class="piano-field__keytext-sub">y</div>
+                </div>
+                <div data-note="Eb" class="piano-field__note black">
+                    <div class="piano-field__keytext">D#</div>
+                    <div class="piano-field__keytext-sub">y</div>
+                </div>
+                <div data-note="E" class="piano-field__note white">
+                    <div class="piano-field__keytext">E</div>
+                    <div class="piano-field__keytext-sub">u</div>
+                </div>
+                <div data-note="F" class="piano-field__note white">
+                    <div class="piano-field__keytext">F</div>
+                    <div class="piano-field__keytext-sub">i</div>
+                </div>
+                <div data-note="Gb" class="piano-field__note black">
+                    <div class="piano-field__keytext">F#</div>
+                    <div class="piano-field__keytext-sub">i</div>
+                </div>
+                <div data-note="G" class="piano-field__note white">
+                    <div class="piano-field__keytext">G</div>
+                    <div class="piano-field__keytext-sub">o</div>
+                </div>
+                <div data-note="Ab" class="piano-field__note black">
+                    <div class="piano-field__keytext">G#</div>
+                    <div class="piano-field__keytext-sub">o</div>
+                </div>
+                <div data-note="A" class="piano-field__note white">
+                    <div class="piano-field__keytext">A</div>
+                    <div class="piano-field__keytext-sub">p</div>
+                </div>
+                <div data-note="Bb" class="piano-field__note black">
+                    <div class="piano-field__keytext">A#</div>
+                    <div class="piano-field__keytext-sub">p</div>
+                </div>
+                <div data-note="B" class="piano-field__note white">
+                    <div class="piano-field__keytext">B</div>
+                    <div class="piano-field__keytext-sub">a</div>
+                </div>
+                <div data-note="C" class="piano-field__note white">
+                    <div class="piano-field__keytext">C</div>
+                    <div class="piano-field__keytext-sub">s</div>
+                </div>
+                <div data-note="Db" class="piano-field__note black">
+                    <div class="piano-field__keytext">C#</div>
+                    <div class="piano-field__keytext-sub">s</div>
+                </div>
+                <div data-note="D" class="piano-field__note white">
+                    <div class="piano-field__keytext">D</div>
+                    <div class="piano-field__keytext-sub">d</div>
+                </div>
+                <div data-note="Eb" class="piano-field__note black">
+                    <div class="piano-field__keytext">D#</div>
+                    <div class="piano-field__keytext-sub">d</div>
+                </div>
+                <div data-note="E" class="piano-field__note white">
+                    <div class="piano-field__keytext">E</div>
+                    <div class="piano-field__keytext-sub">f</div>
+                </div>
+                <div data-note="F" class="piano-field__note white">
+                    <div class="piano-field__keytext">F</div>
+                    <div class="piano-field__keytext-sub">g</div>
+                </div>
+                <div data-note="Gb" class="piano-field__note black">
+                    <div class="piano-field__keytext">F#</div>
+                    <div class="piano-field__keytext-sub">g</div>
+                </div>
+                <div data-note="G" class="piano-field__note white">
+                    <div class="piano-field__keytext">G</div>
+                    <div class="piano-field__keytext-sub">h</div>
+                </div>
+                <div data-note="Ab" class="piano-field__note black">
+                    <div class="piano-field__keytext">G#</div>
+                    <div class="piano-field__keytext-sub">h</div>
+                </div>
+                <div data-note="A" class="piano-field__note white">
+                    <div class="piano-field__keytext">A</div>
+                    <div class="piano-field__keytext-sub">j</div>
+                </div>
+                <div data-note="Bb" class="piano-field__note black">
+                    <div class="piano-field__keytext">A#</div>
+                    <div class="piano-field__keytext-sub">j</div>
+                </div>
+                <div data-note="B" class="piano-field__note white">
+                    <div class="piano-field__keytext">B</div>
+                    <div class="piano-field__keytext-sub">k</div>
+                </div>
+                <div data-note="C" class="piano-field__note white">
+                    <div class="piano-field__keytext">C</div>
+                    <div class="piano-field__keytext-sub">l</div>
+                </div>
+                <div data-note="Db" class="piano-field__note black">
+                    <div class="piano-field__keytext">C#</div>
+                    <div class="piano-field__keytext-sub">l</div>
+                </div>
+                <div data-note="D" class="piano-field__note white">
+                    <div class="piano-field__keytext">D</div>
+                    <div class="piano-field__keytext-sub">z</div>
+                </div>
+                <div data-note="Eb" class="piano-field__note black">
+                    <div class="piano-field__keytext">D#</div>
+                    <div class="piano-field__keytext-sub">z</div>
+                </div>
+                <div data-note="E" class="piano-field__note white">
+                    <div class="piano-field__keytext">E</div>
+                    <div class="piano-field__keytext-sub">x</div>
+                </div>
+                <div data-note="F" class="piano-field__note white">
+                    <div class="piano-field__keytext">F</div>
+                    <div class="piano-field__keytext-sub">c</div>
+                </div>
+                <div data-note="Gb" class="piano-field__note black">
+                    <div class="piano-field__keytext">F#</div>
+                    <div class="piano-field__keytext-sub">c</div>
+                </div>
+                <div data-note="G" class="piano-field__note white">
+                    <div class="piano-field__keytext">G</div>
+                    <div class="piano-field__keytext-sub">v</div>
+                </div>
+                <div data-note="Ab" class="piano-field__note black">
+                    <div class="piano-field__keytext">G#</div>
+                    <div class="piano-field__keytext-sub">v</div>
+                </div>
+                <div data-note="A" class="piano-field__note white">
+                    <div class="piano-field__keytext">A</div>
+                    <div class="piano-field__keytext-sub">b</div>
+                </div>
+                <div data-note="Bb" class="piano-field__note black">
+                    <div class="piano-field__keytext">A#</div>
+                    <div class="piano-field__keytext-sub">b</div>
+                </div>
+                <div data-note="B" class="piano-field__note white">
+                    <div class="piano-field__keytext">B</div>
+                    <div class="piano-field__keytext-sub">n</div>
+                </div>
+                <div data-note="C" class="piano-field__note white">
+                    <div class="piano-field__keytext">C</div>
+                    <div class="piano-field__keytext-sub">m</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script>
+    let note = document.querySelectorAll(".piano-field__note");
+
+    note.forEach((item) => {
+        item.addEventListener("click", (e) => {
+            const itemTarget = e.currentTarget;
+            itemTarget.classList.add("active");
+            setTimeout(function (){
+                itemTarget.classList.remove("active")
+            },300)
+        })
+    })
+</script>
+</html>

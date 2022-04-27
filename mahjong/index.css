@@ -1,0 +1,179 @@
+.mahjong-board {
+  max-width: 650px;
+  max-height: 650px;
+  margin: auto;
+}
+.mahjong-board__row {
+  display: flex;
+  justify-content: center;
+  margin-bottom: -17px;
+  position: relative;
+}
+.mahjong-board__row .mahjong-board__bone {
+  margin-right: -17px;
+}
+.mahjong-board__row.row-right {
+  position: absolute;
+  right: -100px;
+  top: 50%;
+  z-index: 2;
+}
+.mahjong-board__main-pyramid {
+  position: absolute;
+  left: 50%;
+  top: 71px;
+  z-index: 1000;
+  transform: translateX(-52%);
+}
+.mahjong-board__pyramid {
+  position: absolute;
+  top: 50%;
+  z-index: 100;
+  left: 50%;
+  transform: translate(-52%, -52%);
+}
+.mahjong-board__bone {
+  position: relative;
+  display: inline-flex;
+  transition: all 0.25s linear;
+}
+.mahjong-board__bone .mahjong-board__img {
+  width: 70px;
+  height: 87px;
+  position: relative;
+  z-index: 1;
+}
+.mahjong-board__bone .mahjong-board__points {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("./mahjong.svg");
+  background-repeat: no-repeat;
+  z-index: 100;
+  background-size: 2478px 71px;
+  background-position-y: 4px;
+  max-width: 60px;
+}
+.mahjong-board__bone.bone-left {
+  position: absolute;
+  left: -47px;
+  bottom: -50%;
+  transform: translateY(-10%);
+}
+.mahjong-board__bone.bone-disabled {
+  filter: brightness(0.8);
+}
+.mahjong-board__bone.bone-picked {
+  filter: grayscale(0%) sepia(100%) hue-rotate(67deg);
+}
+.mahjong-board .dots_1 {
+  background-position-x: 2px;
+}
+.mahjong-board .dots_2 {
+  background-position-x: -56px;
+}
+.mahjong-board .dots_3 {
+  background-position-x: -115px;
+}
+.mahjong-board .dots_4 {
+  background-position-x: -174px;
+}
+.mahjong-board .dots_5 {
+  background-position-x: -233px;
+}
+.mahjong-board .dots_6 {
+  background-position-x: -292px;
+}
+.mahjong-board .dots_7 {
+  background-position-x: -351px;
+}
+.mahjong-board .dots_8 {
+  background-position-x: -412px;
+}
+.mahjong-board .dots_9 {
+  background-position-x: -469px;
+}
+.mahjong-board .bamboo_1 {
+  background-position-x: -528px;
+}
+.mahjong-board .bamboo_2 {
+  background-position-x: -587px;
+}
+.mahjong-board .bamboo_3 {
+  background-position-x: -646px;
+}
+.mahjong-board .bamboo_4 {
+  background-position-x: -705px;
+}
+.mahjong-board .bamboo_5 {
+  background-position-x: -764px;
+}
+.mahjong-board .bamboo_6 {
+  background-position-x: -823px;
+}
+.mahjong-board .bamboo_7 {
+  background-position-x: -882px;
+}
+.mahjong-board .bamboo_8 {
+  background-position-x: -941px;
+}
+.mahjong-board .bamboo_9 {
+  background-position-x: -1000px;
+}
+.mahjong-board .symbol_1 {
+  background-position-x: -1059px;
+}
+.mahjong-board .symbol_2 {
+  background-position-x: -1118px;
+}
+.mahjong-board .symbol_3 {
+  background-position-x: -1177px;
+}
+.mahjong-board .symbol_4 {
+  background-position-x: -1236px;
+}
+.mahjong-board .symbol_5 {
+  background-position-x: -1295px;
+}
+.mahjong-board .symbol_6 {
+  background-position-x: -1354px;
+}
+.mahjong-board .symbol_7 {
+  background-position-x: -1413px;
+}
+.mahjong-board .symbol_8 {
+  background-position-x: -1472px;
+}
+.mahjong-board .symbol_9 {
+  background-position-x: -1531px;
+}
+.mahjong-board .eastern-wind {
+  background-position-x: -1590px;
+}
+.mahjong-board .south-wind {
+  background-position-x: -1649px;
+}
+.mahjong-board .west-wind {
+  background-position-x: -1708px;
+}
+.mahjong-board .north-wind {
+  background-position-x: -1767px;
+}
+.mahjong-board .red-dragon {
+  background-position-x: -1826px;
+}
+.mahjong-board .green-dragon {
+  background-position-x: -1885px;
+}
+.mahjong-board .white-dragon {
+  background-position-x: -1944px;
+}
+.mahjong-board .lotus {
+  background-position-x: -2003px;
+}
+.mahjong-board .big-lotus {
+  background-position-x: -2239px;
+}
+
+/*# sourceMappingURL=index.css.map */

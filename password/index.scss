@@ -1,0 +1,219 @@
+* {
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+.game__container {
+  max-width: 1000px;
+  margin: auto;
+}
+
+.pass-field {
+  position: relative;
+  background-color: #eaeef4;
+  border-radius: 6px;
+  padding: 15px;
+
+  &__input {
+    -webkit-appearance: none;
+    width: 100%;
+    padding: 20px 0;
+    border: 0;
+    font-size: 30px;
+    outline: none;
+    text-align: center;
+    background-color: #eaeef4;
+    border-radius: 10px;
+  }
+
+  &__row {
+    margin-top: 15px;
+    display: inline-flex;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: center;
+    color: #3b3b3b;
+    font-size: 18px;
+
+    i {
+      font-size: 20px;
+      cursor: pointer;
+      margin-right: 10px;
+    }
+  }
+
+  .very-weak {
+    background-color: rgb(255, 0, 0);
+  }
+
+  .weak {
+    background-color: rgb(255, 68, 0);
+  }
+
+  .good {
+    background: rgb(255, 140, 0);
+  }
+
+  .strong {
+    background: rgb(84, 182, 0);
+  }
+
+  .very-strong {
+    background: rgb(7, 255, 69);
+  }
+}
+
+.pass-action {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-top: 30px;
+
+  &__row {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 15px 15px 15px 0;
+    width: 54%;
+
+    .pass-action__block {
+      display: flex;
+      align-items: center;
+
+      .pass-action__text {
+        font-size: 21px;
+        margin: 0 10px;
+      }
+    }
+  }
+
+  .pass-action__checkbox {
+    width: 100%;
+    opacity: 0;
+
+    &:checked + .pass-action__label:after {
+      opacity: 1;
+      color: #0c8dfc;
+    }
+
+    &:checked + .pass-action__label:before {
+      opacity: 0;
+    }
+  }
+
+  &__label {
+    position: relative;
+    display: inline-block;
+    padding-left: 63px;
+    margin-right: 20px;
+    cursor: pointer;
+
+    &:before {
+      content: "\f204";
+      display: inline-block;
+      font-family: "Font Awesome 5 Pro";
+      font-size: 50px;
+      left: 0;
+      position: absolute;
+      text-rendering: auto;
+      top: 50%;
+      transform: translate(0, -50%);
+      -webkit-font-smoothing: antialiased;
+    }
+
+    &:after {
+      opacity: 0;
+      content: "\f205";
+      display: inline-block;
+      font-family: "Font Awesome 5 Pro";
+      font-size: 50px;
+      left: 0;
+      position: absolute;
+      text-rendering: auto;
+      top: 50%;
+      transform: translate(0, -50%);
+      -webkit-font-smoothing: antialiased;
+    }
+
+
+  }
+
+  &__range {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 46%;
+    position: relative;
+
+    .pass-action__input {
+      outline: 0;
+      border: 0;
+      width: 100%;
+      position: relative;
+      cursor: pointer;
+      margin: 0;
+
+      @media screen and (-webkit-min-device-pixel-ratio: 0) {
+        & {
+          appearance: none;
+          height: 5px;
+          width: 100%;
+        }
+        &::-webkit-slider-runnable-track {
+          height: 5px;
+          -webkit-appearance: none;
+          color: #444;
+          margin-top: 1px;
+          border-radius: 20px;
+          transition: box-shadow 0.2s ease-in-out;
+          background: linear-gradient(to right, rgb(21, 151, 255), rgb(12, 141, 252) 48.6301%, rgb(211, 237, 255) 48.6301%, rgb(222, 225, 226) 100%);
+        }
+
+        &::-webkit-slider-thumb {
+          width: 23px;
+          -webkit-appearance: none;
+          height: 23px;
+          cursor: pointer;
+          background: #fff;
+          border-radius: 50%;
+          transition: box-shadow 0.2s ease-in-out;
+          position: relative;
+          border: 4px solid #1597ff;
+          top: -9px;
+        }
+      }
+    }
+
+    .pass-action__counter {
+      font-size: 14px;
+      line-height: 1;
+      text-shadow: none;
+      padding: 3px 5px;
+      background-color: #006cfa;
+      color: #fff;
+      border-radius: 4px;
+      position: absolute;
+      display: block;
+      top: -32px;
+      cursor: default;
+      white-space: nowrap;
+      left: 50%;
+      transform: translateX(-50%);
+
+      &:before {
+        position: absolute;
+        display: block;
+        content: "";
+        bottom: -6px;
+        left: 50%;
+        width: 0;
+        height: 0;
+        margin-left: -3px;
+        overflow: hidden;
+        border: 3px solid transparent;
+        border-top-color: #006cfa;
+      }
+    }
+  }
+}

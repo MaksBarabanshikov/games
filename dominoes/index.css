@@ -1,0 +1,216 @@
+* {
+  box-sizing: border-box; }
+
+.dominoes-field {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0 10px;
+  max-width: 1100px;
+  margin: 40px auto;
+  font-family: sans-serif;
+  border: 15px solid rgba(0, 0, 0, 0.15);
+  border-radius: 40px;
+  background-color: #3c444f; }
+  .dominoes-field__opponents {
+    display: flex;
+    max-width: 755px; }
+    .dominoes-field__opponents .dominoes-field__opponent.opponent-move .dominoes-field__move {
+      display: block; }
+  .dominoes-field__opponent {
+    display: flex;
+    padding: 10px 10px 20px 10px;
+    background-color: #637284;
+    max-width: 250px;
+    max-height: 80px;
+    margin-right: 40px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    position: relative; }
+    .dominoes-field__opponent:last-child {
+      margin-right: 0; }
+    .dominoes-field__opponent .dominoes-field__move {
+      display: none; }
+  .dominoes-field__image {
+    display: flex;
+    justify-content: end;
+    padding: 5px 10px 0 10px;
+    background-color: #4d5866;
+    border-radius: 10px;
+    margin-right: 15px;
+    max-height: 57px; }
+    .dominoes-field__image:after {
+      content: "\f501";
+      display: inline-flex;
+      font-family: "Font Awesome 5 Pro";
+      font-size: 42px;
+      align-items: flex-end;
+      color: #fff; }
+  .dominoes-field__hand {
+    display: flex;
+    position: relative;
+    width: 80px;
+    height: 100%;
+    margin-right: 15px; }
+    .dominoes-field__hand .dominoes-field__bone.bone-back {
+      width: 32px;
+      height: 100%;
+      border-radius: 10px;
+      position: absolute;
+      background-position: -63px -380px;
+      background-size: 375px; }
+      .dominoes-field__hand .dominoes-field__bone.bone-back:first-child {
+        left: 0;
+        z-index: 100; }
+      .dominoes-field__hand .dominoes-field__bone.bone-back:nth-child(2) {
+        left: 16px;
+        z-index: 80; }
+      .dominoes-field__hand .dominoes-field__bone.bone-back:nth-child(3) {
+        left: 32px;
+        z-index: 60; }
+  .dominoes-field__points {
+    display: flex;
+    flex-direction: column;
+    font-size: 14px;
+    text-align: center;
+    justify-content: center; }
+    .dominoes-field__points .dominoes-field__number {
+      margin-bottom: 10px;
+      color: #fff; }
+    .dominoes-field__points .dominoes-field__text {
+      color: #9BA5B1; }
+  .dominoes-field__move {
+    padding: 0 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    height: 9px;
+    width: 100%;
+    left: 0;
+    bottom: 5px; }
+    .dominoes-field__move .dominoes-field__line {
+      display: block;
+      height: 9px;
+      width: 100%;
+      background-color: #DC5221;
+      border-radius: 10px; }
+  .dominoes-field__their-hand {
+    width: 70%;
+    height: 100px;
+    background-color: #637284;
+    display: flex;
+    padding: 10px 10px 20px 10px;
+    justify-content: space-between;
+    align-items: center;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    position: relative; }
+    .dominoes-field__their-hand .dominoes-field__image:after {
+      content: "\f6a4"; }
+    .dominoes-field__their-hand .dominoes-field__hand {
+      display: inline-flex;
+      width: 350px;
+      height: 100px;
+      position: absolute;
+      left: 50%;
+      transform: translate(-50%, -25%);
+      justify-content: center; }
+      .dominoes-field__their-hand .dominoes-field__hand .dominoes-field__bone.their-bone {
+        width: 50px;
+        height: 100px;
+        background-color: #DCD8D4;
+        border-radius: 10px;
+        margin-right: 5px; }
+        .dominoes-field__their-hand .dominoes-field__hand .dominoes-field__bone.their-bone:last-child {
+          margin-right: 0; }
+    .dominoes-field__their-hand .dominoes-field__points {
+      display: flex;
+      flex-direction: column;
+      font-size: 14px;
+      text-align: center;
+      justify-content: center; }
+      .dominoes-field__their-hand .dominoes-field__points .dominoes-field__number {
+        margin-bottom: 10px;
+        color: #fff; }
+      .dominoes-field__their-hand .dominoes-field__points .dominoes-field__text {
+        color: #9BA5B1; }
+  .dominoes-field .dominoes-field__main {
+    height: 700px;
+    width: 68%; }
+    .dominoes-field .dominoes-field__main .dominoes-field__bone.bone-playing {
+      width: 50px;
+      height: 100px;
+      background-color: #DCD8D4;
+      border-radius: 10px;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%); }
+      .dominoes-field .dominoes-field__main .dominoes-field__bone.bone-playing:nth-child(2) {
+        left: 55.5%; }
+      .dominoes-field .dominoes-field__main .dominoes-field__bone.bone-playing.bone-hor {
+        transform-origin: -50%;
+        transform: rotate(-90deg); }
+  .dominoes-field .dominoes-field__bone {
+    background-image: url(bone.png);
+    background-size: 439px; }
+  .dominoes-field .dominoes-field__bone.six-six {
+    background-position: 1px 3px; }
+  .dominoes-field .dominoes-field__bone.six-five {
+    background-position: -61px 3px; }
+  .dominoes-field .dominoes-field__bone.six-four {
+    background-position: -124px 3px; }
+  .dominoes-field .dominoes-field__bone.six-three {
+    background-position: -187px 3px; }
+  .dominoes-field .dominoes-field__bone.six-two {
+    background-position: -250px 3px; }
+  .dominoes-field .dominoes-field__bone.six-one {
+    background-position: -313px 3px; }
+  .dominoes-field .dominoes-field__bone.six-empty {
+    background-position: -375px 3px; }
+  .dominoes-field .dominoes-field__bone.five-five {
+    background-position: 1px -106px; }
+  .dominoes-field .dominoes-field__bone.five-four {
+    background-position: -61px -106px; }
+  .dominoes-field .dominoes-field__bone.five-three {
+    background-position: -124px -106px; }
+  .dominoes-field .dominoes-field__bone.five-two {
+    background-position: -187px -106px; }
+  .dominoes-field .dominoes-field__bone.five-one {
+    background-position: -250px -106px; }
+  .dominoes-field .dominoes-field__bone.five-empty {
+    background-position: -313px -106px; }
+  .dominoes-field .dominoes-field__bone.four-four {
+    background-position: -375px -106px; }
+  .dominoes-field .dominoes-field__bone.four-three {
+    background-position: 1px -216px; }
+  .dominoes-field .dominoes-field__bone.four-two {
+    background-position: -61px -216px; }
+  .dominoes-field .dominoes-field__bone.four-one {
+    background-position: -124px -216px; }
+  .dominoes-field .dominoes-field__bone.four-empty {
+    background-position: -187px -216px; }
+  .dominoes-field .dominoes-field__bone.three-three {
+    background-position: -250px -216px; }
+  .dominoes-field .dominoes-field__bone.three-two {
+    background-position: -313px -216px; }
+  .dominoes-field .dominoes-field__bone.three-one {
+    background-position: -375px -216px; }
+  .dominoes-field .dominoes-field__bone.three-empty {
+    background-position: 1px -325px; }
+  .dominoes-field .dominoes-field__bone.two-two {
+    background-position: -61px -325px; }
+  .dominoes-field .dominoes-field__bone.two-one {
+    background-position: -124px -325px; }
+  .dominoes-field .dominoes-field__bone.two-empty {
+    background-position: -187px -325px; }
+  .dominoes-field .dominoes-field__bone.one-one {
+    background-position: -250px -325px; }
+  .dominoes-field .dominoes-field__bone.one-empty {
+    background-position: -313px -325px; }
+  .dominoes-field .dominoes-field__bone.empty-empty {
+    background-position: -375px -325px; }
+
+/*# sourceMappingURL=index.css.map */

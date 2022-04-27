@@ -1,0 +1,127 @@
+@charset "UTF-8";
+* {
+  box-sizing: border-box; }
+
+.nonograms-field {
+  display: table;
+  width: 100%;
+  max-width: 804px;
+  border-collapse: collapse;
+  margin: auto;
+  border: 2px solid #000;
+  font-family: sans-serif;
+  overflow: hidden; }
+  .nonograms-field__row {
+    display: table-row; }
+    .nonograms-field__row .nonograms-field__main-cell {
+      display: table-cell;
+      position: relative; }
+    .nonograms-field__row .nonograms-field__main-ecell {
+      display: table-cell;
+      width: 25.1%; }
+    .nonograms-field__row .nonograms-field__main-cell.top-cell {
+      position: relative;
+      z-index: -10; }
+      .nonograms-field__row .nonograms-field__main-cell.top-cell .nonograms-field__row:first-child .nonograms-field__cell {
+        border-top-width: 0; }
+      .nonograms-field__row .nonograms-field__main-cell.top-cell .nonograms-field__row:last-child .nonograms-field__cell {
+        border-bottom-width: 0; }
+      .nonograms-field__row .nonograms-field__main-cell.top-cell .nonograms-field__row .nonograms-field__cell:nth-child(5n) {
+        border-right-width: 2px; }
+      .nonograms-field__row .nonograms-field__main-cell.top-cell .nonograms-field__row .nonograms-field__cell:last-child {
+        border-right-width: 0; }
+      .nonograms-field__row .nonograms-field__main-cell.top-cell .nonograms-field__row .nonograms-field__cell:first-child {
+        border-left-width: 2px; }
+    .nonograms-field__row .nonograms-field__main-cell.left-cell {
+      position: relative;
+      z-index: -10; }
+      .nonograms-field__row .nonograms-field__main-cell.left-cell .nonograms-field__row .nonograms-field__cell:last-child {
+        border-right-width: 0; }
+      .nonograms-field__row .nonograms-field__main-cell.left-cell .nonograms-field__row .nonograms-field__cell:first-child {
+        border-left-width: 0; }
+      .nonograms-field__row .nonograms-field__main-cell.left-cell .nonograms-field__row:nth-child(5n) .nonograms-field__cell {
+        border-bottom-width: 2px; }
+      .nonograms-field__row .nonograms-field__main-cell.left-cell .nonograms-field__row:first-child .nonograms-field__cell {
+        border-top-width: 2px; }
+      .nonograms-field__row .nonograms-field__main-cell.left-cell .nonograms-field__row:last-child .nonograms-field__cell {
+        border-bottom-width: 0; }
+  .nonograms-field__cell {
+    display: table-cell;
+    border: 1px solid #000;
+    width: 40px;
+    height: 40px;
+    position: relative; }
+    .nonograms-field__cell .nonograms-field__number {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      font-size: 40px;
+      font-weight: 700; }
+    .nonograms-field__cell .nonograms-field__subnum {
+      position: absolute;
+      bottom: 0;
+      right: 1px;
+      font-size: 14px; }
+  .nonograms-field__yellow {
+    display: table;
+    background-color: #efe6b9; }
+  .nonograms-field__main-table {
+    display: table;
+    position: absolute;
+    top: 0; }
+    .nonograms-field__main-table .nonograms-field__row:nth-child(5n) .nonograms-field__cell {
+      border-bottom-width: 2px; }
+    .nonograms-field__main-table .nonograms-field__row:last-child .nonograms-field__cell {
+      border-bottom-width: 0; }
+    .nonograms-field__main-table .nonograms-field__row:first-child .nonograms-field__cell {
+      border-top-width: 2px; }
+    .nonograms-field__main-table .nonograms-field__row .nonograms-field__cell:nth-child(5n) {
+      border-right-width: 2px; }
+    .nonograms-field__main-table .nonograms-field__row .nonograms-field__cell:first-child {
+      border-left-width: 2px; }
+    .nonograms-field__main-table .nonograms-field__row .nonograms-field__cell:last-child {
+      border-right-width: 0; }
+    .nonograms-field__main-table .nonograms-field__row .nonograms-field__cell:hover::before {
+      background-color: rgba(238, 238, 238, 0.5);
+      content: '';
+      height: 100%;
+      left: -5000px;
+      position: absolute;
+      top: 0;
+      width: 10000px;
+      z-index: -1; }
+    .nonograms-field__main-table .nonograms-field__row .nonograms-field__cell:hover::after {
+      background-color: rgba(238, 238, 238, 0.5);
+      content: '';
+      height: 10000px;
+      left: 0;
+      position: absolute;
+      top: -5000px;
+      width: 100%;
+      z-index: -2; }
+  .nonograms-field__cross-cell:after {
+    content: "\f00d";
+    display: inline-flex;
+    font-family: "Font Awesome 5 Pro";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 40px;
+    font-weight: 700;
+    z-index: 100; }
+  .nonograms-field__square-сell:after {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 90%;
+    height: 90%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #000;
+    border-radius: 5px;
+    z-index: 100; }
+
+/*# sourceMappingURL=index.css.map */

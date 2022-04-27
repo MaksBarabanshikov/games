@@ -1,0 +1,35 @@
+.game__container {
+  width: 500px;
+  position: relative;
+  margin: auto; }
+
+.grid {
+  position: relative;
+  font-family: CeliaGarcia, Calibri, sans-serif !important;
+  padding: 20px;
+  background-color: rgba(0, 119, 24, 0.29);
+  border-radius: 10px; }
+  .grid__row {
+    display: flex; }
+    .grid__row .grid__cell {
+      width: 103px;
+      height: 103px;
+      float: left;
+      margin: 6px;
+      border-radius: 10px;
+      line-height: 105px;
+      text-align: center;
+      font-weight: bold;
+      font-size: 30pt;
+      cursor: pointer; }
+
+.empty {
+  background-color: rgba(0, 0, 0, 0.11) !important; }
+
+.yellow {
+  background-color: #ffffa5; }
+
+.right {
+  background-color: #2a4bc9; }
+
+/*# sourceMappingURL=index.css.map */

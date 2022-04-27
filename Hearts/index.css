@@ -1,0 +1,301 @@
+body {
+  background: #2a2d34; }
+
+* {
+  box-sizing: border-box; }
+
+.hearts-field {
+  width: 1500px;
+  max-width: 1500px;
+  height: 800px;
+  margin: auto;
+  font-family: sans-serif;
+  position: relative; }
+  .hearts-field__opponent {
+    max-width: 460px;
+    width: 460px;
+    height: 200px;
+    margin: auto; }
+    .hearts-field__opponent:first-child .hearts-field__play-card {
+      top: 30%; }
+    .hearts-field__opponent:nth-child(2) {
+      transform: rotate(90deg);
+      position: absolute;
+      left: 0;
+      top: 38%; }
+      .hearts-field__opponent:nth-child(2) .hearts-field__play-card {
+        top: -190%; }
+    .hearts-field__opponent:nth-child(3) {
+      transform: rotate(-90deg);
+      position: absolute;
+      right: 0;
+      top: 38%; }
+      .hearts-field__opponent:nth-child(3) .hearts-field__play-card {
+        top: -190%; }
+  .hearts-field__info {
+    padding: 20px 40px;
+    background-color: #000;
+    text-align: center;
+    color: #ccc;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 200px;
+    margin: auto;
+    position: relative;
+    top: 0;
+    z-index: 200;
+    border-radius: 5px; }
+    .hearts-field__info .hearts-field__name {
+      margin-right: 5px; }
+    .hearts-field__info:before {
+      content: "\f02e";
+      display: inline-flex;
+      font-family: "Font Awesome 5 Pro";
+      margin-right: 10px;
+      font-size: 20px; }
+  .hearts-field__hand {
+    display: flex;
+    width: 100%;
+    height: 100px;
+    position: relative;
+    transform: translate(10px, -30px); }
+    .hearts-field__hand .hearts-field__card {
+      position: absolute; }
+      .hearts-field__hand .hearts-field__card:nth-child(1) {
+        left: 0;
+        z-index: 100; }
+      .hearts-field__hand .hearts-field__card:nth-child(2) {
+        left: 30px;
+        z-index: 99; }
+      .hearts-field__hand .hearts-field__card:nth-child(3) {
+        left: 60px;
+        z-index: 98; }
+      .hearts-field__hand .hearts-field__card:nth-child(4) {
+        left: 90px;
+        z-index: 97; }
+      .hearts-field__hand .hearts-field__card:nth-child(5) {
+        left: 120px;
+        z-index: 96; }
+      .hearts-field__hand .hearts-field__card:nth-child(6) {
+        left: 150px;
+        z-index: 95; }
+      .hearts-field__hand .hearts-field__card:nth-child(7) {
+        left: 180px;
+        z-index: 94; }
+      .hearts-field__hand .hearts-field__card:nth-child(8) {
+        left: 210px;
+        z-index: 93; }
+      .hearts-field__hand .hearts-field__card:nth-child(9) {
+        left: 240px;
+        z-index: 92; }
+      .hearts-field__hand .hearts-field__card:nth-child(10) {
+        left: 270px;
+        z-index: 91; }
+      .hearts-field__hand .hearts-field__card:nth-child(11) {
+        left: 300px;
+        z-index: 90; }
+      .hearts-field__hand .hearts-field__card:nth-child(12) {
+        left: 330px;
+        z-index: 89; }
+      .hearts-field__hand .hearts-field__card:nth-child(13) {
+        left: 360px;
+        z-index: 88; }
+  .hearts-field__play-card {
+    position: absolute;
+    width: 77.5px;
+    height: 123.5px;
+    left: 50%;
+    transform: translateX(-50%); }
+    .hearts-field__play-card .hearts-field__card {
+      margin: 0; }
+  .hearts-field__card {
+    background-repeat: no-repeat;
+    border-radius: 6px;
+    transition: .3s ease-in-out;
+    position: relative;
+    margin-left: 2px;
+    width: 77.5px;
+    height: 118.5px; }
+    .hearts-field__card.card-closed .hearts-field__card-front {
+      display: none; }
+    .hearts-field__card-front {
+      width: 77.5px;
+      height: 123.5px;
+      border-radius: 6px;
+      top: 0;
+      left: 0;
+      right: 0;
+      position: absolute;
+      background-image: url(cards.svg); }
+    .hearts-field__card-back {
+      background-image: url(cards.svg);
+      background-size: 1000px;
+      width: 77.5px;
+      height: 118.5px;
+      border-radius: 6px;
+      background-position: -154px 119px; }
+  .hearts-field__my-hand {
+    max-width: 460px;
+    width: 460px;
+    height: 200px;
+    margin: auto;
+    position: absolute;
+    bottom: -100px;
+    left: 50%;
+    transform: translateX(-50%); }
+    .hearts-field__my-hand .hearts-field__info:before {
+      content: "\f02e";
+      color: yellow;
+      font-weight: 700; }
+    .hearts-field__my-hand .hearts-field__hand {
+      transform: translateY(0); }
+    .hearts-field__my-hand .hearts-field__card {
+      position: absolute; }
+      .hearts-field__my-hand .hearts-field__card:nth-child(1) {
+        left: 0;
+        z-index: 87; }
+      .hearts-field__my-hand .hearts-field__card:nth-child(2) {
+        left: 30px;
+        z-index: 89; }
+      .hearts-field__my-hand .hearts-field__card:nth-child(3) {
+        left: 60px;
+        z-index: 90; }
+      .hearts-field__my-hand .hearts-field__card:nth-child(4) {
+        left: 90px;
+        z-index: 91; }
+      .hearts-field__my-hand .hearts-field__card:nth-child(5) {
+        left: 120px;
+        z-index: 92; }
+      .hearts-field__my-hand .hearts-field__card:nth-child(6) {
+        left: 150px;
+        z-index: 93; }
+      .hearts-field__my-hand .hearts-field__card:nth-child(7) {
+        left: 180px;
+        z-index: 94; }
+      .hearts-field__my-hand .hearts-field__card:nth-child(8) {
+        left: 210px;
+        z-index: 95; }
+      .hearts-field__my-hand .hearts-field__card:nth-child(9) {
+        left: 240px;
+        z-index: 96; }
+      .hearts-field__my-hand .hearts-field__card:nth-child(10) {
+        left: 270px;
+        z-index: 97; }
+      .hearts-field__my-hand .hearts-field__card:nth-child(11) {
+        left: 300px;
+        z-index: 98; }
+      .hearts-field__my-hand .hearts-field__card:nth-child(12) {
+        left: 330px;
+        z-index: 99; }
+      .hearts-field__my-hand .hearts-field__card:nth-child(13) {
+        left: 360px;
+        z-index: 100; }
+    .hearts-field__my-hand .hearts-field__play-card {
+      top: -127%; }
+  .hearts-field .hearts-field__clubs-ace .hearts-field__card-front {
+    background-position: 0px 0px; }
+  .hearts-field .hearts-field__clubs-2 .hearts-field__card-front {
+    background-position: -79px 0px; }
+  .hearts-field .hearts-field__clubs-3 .hearts-field__card-front {
+    background-position: -158px 0px; }
+  .hearts-field .hearts-field__clubs-4 .hearts-field__card-front {
+    background-position: -237px 0px; }
+  .hearts-field .hearts-field__clubs-5 .hearts-field__card-front {
+    background-position: -316px 0px; }
+  .hearts-field .hearts-field__clubs-6 .hearts-field__card-front {
+    background-position: -395px 0px; }
+  .hearts-field .hearts-field__clubs-7 .hearts-field__card-front {
+    background-position: -474px 0px; }
+  .hearts-field .hearts-field__clubs-8 .hearts-field__card-front {
+    background-position: -553px 0px; }
+  .hearts-field .hearts-field__clubs-9 .hearts-field__card-front {
+    background-position: -632px 0px; }
+  .hearts-field .hearts-field__clubs-10 .hearts-field__card-front {
+    background-position: -711px 0px; }
+  .hearts-field .hearts-field__clubs-jack .hearts-field__card-front {
+    background-position: -790px 0px; }
+  .hearts-field .hearts-field__clubs-queen .hearts-field__card-front {
+    background-position: -869px 0px; }
+  .hearts-field .hearts-field__clubs-king .hearts-field__card-front {
+    background-position: -948px 0px; }
+  .hearts-field .hearts-field__diamonds-ace .hearts-field__card-front {
+    background-position: 0px -123px; }
+  .hearts-field .hearts-field__diamonds-2 .hearts-field__card-front {
+    background-position: -79px -123px; }
+  .hearts-field .hearts-field__diamonds-3 .hearts-field__card-front {
+    background-position: -158px -123px; }
+  .hearts-field .hearts-field__diamonds-4 .hearts-field__card-front {
+    background-position: -237px -123px; }
+  .hearts-field .hearts-field__diamonds-5 .hearts-field__card-front {
+    background-position: -316px -123px; }
+  .hearts-field .hearts-field__diamonds-6 .hearts-field__card-front {
+    background-position: -395px -123px; }
+  .hearts-field .hearts-field__diamonds-7 .hearts-field__card-front {
+    background-position: -474px -123px; }
+  .hearts-field .hearts-field__diamonds-8 .hearts-field__card-front {
+    background-position: -553px -123px; }
+  .hearts-field .hearts-field__diamonds-9 .hearts-field__card-front {
+    background-position: -632px -123px; }
+  .hearts-field .hearts-field__diamonds-10 .hearts-field__card-front {
+    background-position: -711px -123px; }
+  .hearts-field .hearts-field__diamonds-jack .hearts-field__card-front {
+    background-position: -790px -123px; }
+  .hearts-field .hearts-field__diamonds-queen .hearts-field__card-front {
+    background-position: -869px -123px; }
+  .hearts-field .hearts-field__diamonds-king .hearts-field__card-front {
+    background-position: -948px -123px; }
+  .hearts-field .hearts-field__hearts-ace .hearts-field__card-front {
+    background-position: 0px -246px; }
+  .hearts-field .hearts-field__hearts-2 .hearts-field__card-front {
+    background-position: -79px -246px; }
+  .hearts-field .hearts-field__hearts-3 .hearts-field__card-front {
+    background-position: -158px -246px; }
+  .hearts-field .hearts-field__hearts-4 .hearts-field__card-front {
+    background-position: -237px -246px; }
+  .hearts-field .hearts-field__hearts-5 .hearts-field__card-front {
+    background-position: -316px -246px; }
+  .hearts-field .hearts-field__hearts-6 .hearts-field__card-front {
+    background-position: -395px -246px; }
+  .hearts-field .hearts-field__hearts-7 .hearts-field__card-front {
+    background-position: -474px -246px; }
+  .hearts-field .hearts-field__hearts-8 .hearts-field__card-front {
+    background-position: -553px -246px; }
+  .hearts-field .hearts-field__hearts-9 .hearts-field__card-front {
+    background-position: -632px -246px; }
+  .hearts-field .hearts-field__hearts-10 .hearts-field__card-front {
+    background-position: -711px -246px; }
+  .hearts-field .hearts-field__hearts-jack .hearts-field__card-front {
+    background-position: -790px -246px; }
+  .hearts-field .hearts-field__hearts-queen .hearts-field__card-front {
+    background-position: -869px -246px; }
+  .hearts-field .hearts-field__hearts-king .hearts-field__card-front {
+    background-position: -948px -246px; }
+  .hearts-field .hearts-field__spades-ace .hearts-field__card-front {
+    background-position: 0px -369px; }
+  .hearts-field .hearts-field__spades-2 .hearts-field__card-front {
+    background-position: -79px -369px; }
+  .hearts-field .hearts-field__spades-3 .hearts-field__card-front {
+    background-position: -158px -369px; }
+  .hearts-field .hearts-field__spades-4 .hearts-field__card-front {
+    background-position: -237px -369px; }
+  .hearts-field .hearts-field__spades-5 .hearts-field__card-front {
+    background-position: -316px -369px; }
+  .hearts-field .hearts-field__spades-6 .hearts-field__card-front {
+    background-position: -395px -369px; }
+  .hearts-field .hearts-field__spades-7 .hearts-field__card-front {
+    background-position: -474px -369px; }
+  .hearts-field .hearts-field__spades-8 .hearts-field__card-front {
+    background-position: -553px -369px; }
+  .hearts-field .hearts-field__spades-9 .hearts-field__card-front {
+    background-position: -632px -369px; }
+  .hearts-field .hearts-field__spades-10 .hearts-field__card-front {
+    background-position: -711px -369px; }
+  .hearts-field .hearts-field__spades-jack .hearts-field__card-front {
+    background-position: -790px -369px; }
+  .hearts-field .hearts-field__spades-queen .hearts-field__card-front {
+    background-position: -869px -369px; }
+  .hearts-field .hearts-field__spades-king .hearts-field__card-front {
+    background-position: -948px -369px; }
+
+/*# sourceMappingURL=index.css.map */

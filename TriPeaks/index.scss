@@ -1,0 +1,111 @@
+$card_suites: "clubs", "diamonds", "hearts", "spades";
+$card_hands: "ace", "2", "3", "4", "5", "6", "7", "8", "9", "10", "jack", "queen", "king";
+
+$coef: 1.52;
+$svg_card_width: 79 * $coef;
+$svg_card_height: 123 * $coef;
+
+$color-twelve: #00ca6d;
+
+* {
+  box-sizing: border-box;
+}
+
+.game {
+
+  &__container {
+    max-width: 1241px;
+    margin: auto;
+  }
+
+  &__body {
+    max-height: 500px;
+    display: flex;
+  }
+
+  &__row {
+    display: flex;
+    justify-content: center;
+    height: 186px;
+    position: relative;
+  }
+
+  &__card {
+    background-repeat: no-repeat;
+    background-size: 1027*$coef+px 615*$coef+px;
+    width: $svg_card_width+px;
+    height: $svg_card_height+px;
+    border-radius: 6px;
+    transform-style: preserve-3d;
+    transform: rotateY(180deg);
+    transition: .3s ease-in-out;
+    margin: 0 2px;
+
+    &_base {
+      border: 1.5px solid #999;
+      border-radius: 6px;
+    }
+
+    &_front {
+      background-size: 1027*$coef+px 615*$coef+px;
+      width: $svg_card_width+px;
+      height: $svg_card_height+px;
+      border-radius: 6px;
+      top: 0;
+      left: 0;
+      right: 0;
+      position: absolute;
+      background-image: url(cards.svg);
+      transform: rotateY(180deg);
+    }
+
+    &_back {
+      background-image: url(cards.svg);
+      background-size: 1027*$coef+px 615*$coef+px;
+      width: $svg_card_width+px;
+      height: $svg_card_height+px;
+      border-radius: 6px;
+      background-position: -1*158*$coef+px -1*492*$coef+px;
+      transform: rotateY(0deg);
+    }
+
+    &_closed {
+      transform: rotateY(0deg);
+    }
+
+    &_hearts_queen &_front {
+      background-position: -1320.88px -373.92px;
+    }
+  }
+
+  &__deck {
+    display: flex;
+    justify-content: center;
+
+    .game__deck-card_closed {
+      margin-right: 20px;
+      position: relative;
+    }
+
+    .game__card:not(.game__card_base) {
+      position: absolute;
+    }
+
+    .game__deck-cards_showcase {
+      position: relative;
+    }
+
+  }
+}
+
+@each $suit in $card_suites {
+  $i: index($card_suites, $suit) - 1;
+  @each $hand in $card_hands {
+    $j: index($card_hands, $hand) - 1;
+    .game__card_#{$suit}_#{$hand} {
+      .game__card_front {
+        background-position: -1 * $svg_card_width*$j+px -1 * $svg_card_height*$i+px;
+      }
+    }
+  }
+}

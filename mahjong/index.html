@@ -1,0 +1,647 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./index.css">
+    <title>mahjong</title>
+</head>
+<body>
+<div class="game__main">
+    <div class="game__container">
+        <div class="game__mahjong-board mahjong-board">
+            <div class="mahjong-board__row">
+                <div class="mahjong-board__bone bone-picked">
+                    <img class="mahjong-board__img" src="./bone.svg" alt="">
+                    <div class="mahjong-board__points symbol_1"></div>
+                </div>
+                <div class="mahjong-board__bone bone-picked">
+                    <img class="mahjong-board__img" src="./bone.svg" alt="">
+                    <div class="mahjong-board__points west-wind"></div>
+                </div>
+                <div class="mahjong-board__bone">
+                    <img class="mahjong-board__img" src="./bone.svg" alt="">
+                    <div class="mahjong-board__points eastern-wind"></div>
+                </div>
+                <div class="mahjong-board__bone">
+                    <img class="mahjong-board__img" src="./bone.svg" alt="">
+                    <div class="mahjong-board__points north-wind"></div>
+                </div>
+                <div class="mahjong-board__bone">
+                    <img class="mahjong-board__img" src="./bone.svg" alt="">
+                    <div class="mahjong-board__points south-wind"></div>
+                </div>
+                <div class="mahjong-board__bone">
+                    <img class="mahjong-board__img" src="./bone.svg" alt="">
+                    <div class="mahjong-board__points green-dragon"></div>
+                </div>
+                <div class="mahjong-board__bone">
+                    <img class="mahjong-board__img" src="./bone.svg" alt="">
+                    <div class="mahjong-board__points red-dragon"></div>
+                </div>
+                <div class="mahjong-board__bone">
+                    <img class="mahjong-board__img" src="./bone.svg" alt="">
+                    <div class="mahjong-board__points white-dragon"></div>
+                </div>
+                <div class="mahjong-board__bone">
+                    <img class="mahjong-board__img" src="./bone.svg" alt="">
+                    <div class="mahjong-board__points lotus"></div>
+                </div>
+                <div class="mahjong-board__bone">
+                    <img class="mahjong-board__img" src="./bone.svg" alt="">
+                    <div class="mahjong-board__points big-lotus"></div>
+                </div>
+                <div class="mahjong-board__bone">
+                    <img class="mahjong-board__img" src="./bone.svg" alt="">
+                    <div class="mahjong-board__points lotus"></div>
+                </div>
+                <div class="mahjong-board__bone">
+                    <img class="mahjong-board__img" src="./bone.svg" alt="">
+                    <div class="mahjong-board__points big-lotus"></div>
+                </div>
+            </div>
+            <div class="mahjong-board__row">
+                <div class="mahjong-board__bone">
+                    <img class="mahjong-board__img" src="./bone.svg" alt="">
+                    <div class="mahjong-board__points symbol_1"></div>
+                </div>
+                <div class="mahjong-board__bone">
+                    <img class="mahjong-board__img" src="./bone.svg" alt="">
+                    <div class="mahjong-board__points west-wind"></div>
+                </div>
+                <div class="mahjong-board__bone">
+                    <img class="mahjong-board__img" src="./bone.svg" alt="">
+                    <div class="mahjong-board__points eastern-wind"></div>
+                </div>
+                <div class="mahjong-board__bone">
+                    <img class="mahjong-board__img" src="./bone.svg" alt="">
+                    <div class="mahjong-board__points north-wind"></div>
+                </div>
+                <div class="mahjong-board__bone">
+                    <img class="mahjong-board__img" src="./bone.svg" alt="">
+                    <div class="mahjong-board__points south-wind"></div>
+                </div>
+                <div class="mahjong-board__bone">
+                    <img class="mahjong-board__img" src="./bone.svg" alt="">
+                    <div class="mahjong-board__points green-dragon"></div>
+                </div>
+                <div class="mahjong-board__bone">
+                    <img class="mahjong-board__img" src="./bone.svg" alt="">
+                    <div class="mahjong-board__points red-dragon"></div>
+                </div>
+                <div class="mahjong-board__bone">
+                    <img class="mahjong-board__img" src="./bone.svg" alt="">
+                    <div class="mahjong-board__points white-dragon"></div>
+                </div>
+            </div>
+            <div class="mahjong-board__row">
+                <div class="mahjong-board__bone">
+                    <img class="mahjong-board__img" src="./bone.svg" alt="">
+                    <div class="mahjong-board__points symbol_1"></div>
+                </div>
+                <div class="mahjong-board__bone">
+                    <img class="mahjong-board__img" src="./bone.svg" alt="">
+                    <div class="mahjong-board__points west-wind"></div>
+                </div>
+                <div class="mahjong-board__bone">
+                    <img class="mahjong-board__img" src="./bone.svg" alt="">
+                    <div class="mahjong-board__points symbol_1"></div>
+                </div>
+                <div class="mahjong-board__bone">
+                    <img class="mahjong-board__img" src="./bone.svg" alt="">
+                    <div class="mahjong-board__points west-wind"></div>
+                </div>
+                <div class="mahjong-board__bone">
+                    <img class="mahjong-board__img" src="./bone.svg" alt="">
+                    <div class="mahjong-board__points eastern-wind"></div>
+                </div>
+                <div class="mahjong-board__bone">
+                    <img class="mahjong-board__img" src="./bone.svg" alt="">
+                    <div class="mahjong-board__points north-wind"></div>
+                </div>
+                <div class="mahjong-board__bone">
+                    <img class="mahjong-board__img" src="./bone.svg" alt="">
+                    <div class="mahjong-board__points south-wind"></div>
+                </div>
+                <div class="mahjong-board__bone">
+                    <img class="mahjong-board__img" src="./bone.svg" alt="">
+                    <div class="mahjong-board__points green-dragon"></div>
+                </div>
+                <div class="mahjong-board__bone">
+                    <img class="mahjong-board__img" src="./bone.svg" alt="">
+                    <div class="mahjong-board__points red-dragon"></div>
+                </div>
+                <div class="mahjong-board__bone">
+                    <img class="mahjong-board__img" src="./bone.svg" alt="">
+                    <div class="mahjong-board__points white-dragon"></div>
+                </div>
+            </div>
+            <div class="mahjong-board__row">
+                <div class="mahjong-board__bone bone-left">
+                    <img class="mahjong-board__img" src="./bone.svg" alt="">
+                    <div class="mahjong-board__points symbol_1"></div>
+                </div>
+                <div class="mahjong-board__bone">
+                    <img class="mahjong-board__img" src="./bone.svg" alt="">
+                    <div class="mahjong-board__points symbol_1"></div>
+                </div>
+                <div class="mahjong-board__bone">
+                    <img class="mahjong-board__img" src="./bone.svg" alt="">
+                    <div class="mahjong-board__points west-wind"></div>
+                </div>
+                <div class="mahjong-board__bone">
+                    <img class="mahjong-board__img" src="./bone.svg" alt="">
+                    <div class="mahjong-board__points eastern-wind"></div>
+                </div>
+                <div class="mahjong-board__bone">
+                    <img class="mahjong-board__img" src="./bone.svg" alt="">
+                    <div class="mahjong-board__points north-wind"></div>
+                </div>
+                <div class="mahjong-board__bone">
+                    <img class="mahjong-board__img" src="./bone.svg" alt="">
+                    <div class="mahjong-board__points south-wind"></div>
+                </div>
+                <div class="mahjong-board__bone">
+                    <img class="mahjong-board__img" src="./bone.svg" alt="">
+                    <div class="mahjong-board__points green-dragon"></div>
+                </div>
+                <div class="mahjong-board__bone">
+                    <img class="mahjong-board__img" src="./bone.svg" alt="">
+                    <div class="mahjong-board__points red-dragon"></div>
+                </div>
+                <div class="mahjong-board__bone">
+                    <img class="mahjong-board__img" src="./bone.svg" alt="">
+                    <div class="mahjong-board__points white-dragon"></div>
+                </div>
+                <div class="mahjong-board__bone">
+                    <img class="mahjong-board__img" src="./bone.svg" alt="">
+                    <div class="mahjong-board__points lotus"></div>
+                </div>
+                <div class="mahjong-board__bone">
+                    <img class="mahjong-board__img" src="./bone.svg" alt="">
+                    <div class="mahjong-board__points big-lotus"></div>
+                </div>
+                <div class="mahjong-board__bone">
+                    <img class="mahjong-board__img" src="./bone.svg" alt="">
+                    <div class="mahjong-board__points lotus"></div>
+                </div>
+                <div class="mahjong-board__bone">
+                    <img class="mahjong-board__img" src="./bone.svg" alt="">
+                    <div class="mahjong-board__points big-lotus"></div>
+                </div>
+                <div class="mahjong-board__row row-right">
+                    <div class="mahjong-board__bone">
+                        <img class="mahjong-board__img" src="./bone.svg" alt="">
+                        <div class="mahjong-board__points red-dragon"></div>
+                    </div>
+                    <div class="mahjong-board__bone">
+                        <img class="mahjong-board__img" src="./bone.svg" alt="">
+                        <div class="mahjong-board__points white-dragon"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="mahjong-board__row">
+                <div class="mahjong-board__bone">
+                    <img class="mahjong-board__img" src="./bone.svg" alt="">
+                    <div class="mahjong-board__points symbol_1"></div>
+                </div>
+                <div class="mahjong-board__bone">
+                    <img class="mahjong-board__img" src="./bone.svg" alt="">
+                    <div class="mahjong-board__points west-wind"></div>
+                </div>
+                <div class="mahjong-board__bone">
+                    <img class="mahjong-board__img" src="./bone.svg" alt="">
+                    <div class="mahjong-board__points eastern-wind"></div>
+                </div>
+                <div class="mahjong-board__bone">
+                    <img class="mahjong-board__img" src="./bone.svg" alt="">
+                    <div class="mahjong-board__points north-wind"></div>
+                </div>
+                <div class="mahjong-board__bone">
+                    <img class="mahjong-board__img" src="./bone.svg" alt="">
+                    <div class="mahjong-board__points south-wind"></div>
+                </div>
+                <div class="mahjong-board__bone">
+                    <img class="mahjong-board__img" src="./bone.svg" alt="">
+                    <div class="mahjong-board__points green-dragon"></div>
+                </div>
+                <div class="mahjong-board__bone">
+                    <img class="mahjong-board__img" src="./bone.svg" alt="">
+                    <div class="mahjong-board__points red-dragon"></div>
+                </div>
+                <div class="mahjong-board__bone">
+                    <img class="mahjong-board__img" src="./bone.svg" alt="">
+                    <div class="mahjong-board__points white-dragon"></div>
+                </div>
+                <div class="mahjong-board__bone">
+                    <img class="mahjong-board__img" src="./bone.svg" alt="">
+                    <div class="mahjong-board__points lotus"></div>
+                </div>
+                <div class="mahjong-board__bone">
+                    <img class="mahjong-board__img" src="./bone.svg" alt="">
+                    <div class="mahjong-board__points big-lotus"></div>
+                </div>
+                <div class="mahjong-board__bone">
+                    <img class="mahjong-board__img" src="./bone.svg" alt="">
+                    <div class="mahjong-board__points lotus"></div>
+                </div>
+                <div class="mahjong-board__bone">
+                    <img class="mahjong-board__img" src="./bone.svg" alt="">
+                    <div class="mahjong-board__points big-lotus"></div>
+                </div>
+            </div>
+            <div class="mahjong-board__row">
+                <div class="mahjong-board__bone">
+                    <img class="mahjong-board__img" src="./bone.svg" alt="">
+                    <div class="mahjong-board__points symbol_1"></div>
+                </div>
+                <div class="mahjong-board__bone">
+                    <img class="mahjong-board__img" src="./bone.svg" alt="">
+                    <div class="mahjong-board__points west-wind"></div>
+                </div>
+                <div class="mahjong-board__bone">
+                    <img class="mahjong-board__img" src="./bone.svg" alt="">
+                    <div class="mahjong-board__points symbol_1"></div>
+                </div>
+                <div class="mahjong-board__bone">
+                    <img class="mahjong-board__img" src="./bone.svg" alt="">
+                    <div class="mahjong-board__points west-wind"></div>
+                </div>
+                <div class="mahjong-board__bone">
+                    <img class="mahjong-board__img" src="./bone.svg" alt="">
+                    <div class="mahjong-board__points eastern-wind"></div>
+                </div>
+                <div class="mahjong-board__bone">
+                    <img class="mahjong-board__img" src="./bone.svg" alt="">
+                    <div class="mahjong-board__points north-wind"></div>
+                </div>
+                <div class="mahjong-board__bone">
+                    <img class="mahjong-board__img" src="./bone.svg" alt="">
+                    <div class="mahjong-board__points south-wind"></div>
+                </div>
+                <div class="mahjong-board__bone">
+                    <img class="mahjong-board__img" src="./bone.svg" alt="">
+                    <div class="mahjong-board__points green-dragon"></div>
+                </div>
+                <div class="mahjong-board__bone">
+                    <img class="mahjong-board__img" src="./bone.svg" alt="">
+                    <div class="mahjong-board__points red-dragon"></div>
+                </div>
+                <div class="mahjong-board__bone">
+                    <img class="mahjong-board__img" src="./bone.svg" alt="">
+                    <div class="mahjong-board__points white-dragon"></div>
+                </div>
+            </div>
+            <div class="mahjong-board__row">
+                <div class="mahjong-board__bone">
+                    <img class="mahjong-board__img" src="./bone.svg" alt="">
+                    <div class="mahjong-board__points symbol_1"></div>
+                </div>
+                <div class="mahjong-board__bone">
+                    <img class="mahjong-board__img" src="./bone.svg" alt="">
+                    <div class="mahjong-board__points west-wind"></div>
+                </div>
+                <div class="mahjong-board__bone">
+                    <img class="mahjong-board__img" src="./bone.svg" alt="">
+                    <div class="mahjong-board__points eastern-wind"></div>
+                </div>
+                <div class="mahjong-board__bone">
+                    <img class="mahjong-board__img" src="./bone.svg" alt="">
+                    <div class="mahjong-board__points north-wind"></div>
+                </div>
+                <div class="mahjong-board__bone">
+                    <img class="mahjong-board__img" src="./bone.svg" alt="">
+                    <div class="mahjong-board__points south-wind"></div>
+                </div>
+                <div class="mahjong-board__bone">
+                    <img class="mahjong-board__img" src="./bone.svg" alt="">
+                    <div class="mahjong-board__points green-dragon"></div>
+                </div>
+                <div class="mahjong-board__bone">
+                    <img class="mahjong-board__img" src="./bone.svg" alt="">
+                    <div class="mahjong-board__points red-dragon"></div>
+                </div>
+                <div class="mahjong-board__bone">
+                    <img class="mahjong-board__img" src="./bone.svg" alt="">
+                    <div class="mahjong-board__points white-dragon"></div>
+                </div>
+            </div>
+            <div class="mahjong-board__row">
+                <div class="mahjong-board__bone">
+                    <img class="mahjong-board__img" src="./bone.svg" alt="">
+                    <div class="mahjong-board__points symbol_1"></div>
+                </div>
+                <div class="mahjong-board__bone">
+                    <img class="mahjong-board__img" src="./bone.svg" alt="">
+                    <div class="mahjong-board__points west-wind"></div>
+                </div>
+                <div class="mahjong-board__bone">
+                    <img class="mahjong-board__img" src="./bone.svg" alt="">
+                    <div class="mahjong-board__points eastern-wind"></div>
+                </div>
+                <div class="mahjong-board__bone">
+                    <img class="mahjong-board__img" src="./bone.svg" alt="">
+                    <div class="mahjong-board__points north-wind"></div>
+                </div>
+                <div class="mahjong-board__bone">
+                    <img class="mahjong-board__img" src="./bone.svg" alt="">
+                    <div class="mahjong-board__points south-wind"></div>
+                </div>
+                <div class="mahjong-board__bone">
+                    <img class="mahjong-board__img" src="./bone.svg" alt="">
+                    <div class="mahjong-board__points green-dragon"></div>
+                </div>
+                <div class="mahjong-board__bone">
+                    <img class="mahjong-board__img" src="./bone.svg" alt="">
+                    <div class="mahjong-board__points red-dragon"></div>
+                </div>
+                <div class="mahjong-board__bone">
+                    <img class="mahjong-board__img" src="./bone.svg" alt="">
+                    <div class="mahjong-board__points white-dragon"></div>
+                </div>
+                <div class="mahjong-board__bone">
+                    <img class="mahjong-board__img" src="./bone.svg" alt="">
+                    <div class="mahjong-board__points lotus"></div>
+                </div>
+                <div class="mahjong-board__bone">
+                    <img class="mahjong-board__img" src="./bone.svg" alt="">
+                    <div class="mahjong-board__points big-lotus"></div>
+                </div>
+                <div class="mahjong-board__bone">
+                    <img class="mahjong-board__img" src="./bone.svg" alt="">
+                    <div class="mahjong-board__points lotus"></div>
+                </div>
+                <div class="mahjong-board__bone">
+                    <img class="mahjong-board__img" src="./bone.svg" alt="">
+                    <div class="mahjong-board__points big-lotus"></div>
+                </div>
+            </div>
+            <div class="mahjong-board__main-pyramid">
+                <div class="mahjong-board__row">
+                    <div class="mahjong-board__bone bone-disabled">
+                        <img class="mahjong-board__img" src="./bone.svg" alt="">
+                        <div class="mahjong-board__points symbol_1"></div>
+                    </div>
+                    <div class="mahjong-board__bone bone-disabled">
+                        <img class="mahjong-board__img" src="./bone.svg" alt="">
+                        <div class="mahjong-board__points west-wind"></div>
+                    </div>
+                    <div class="mahjong-board__bone bone-disabled">
+                        <img class="mahjong-board__img" src="./bone.svg" alt="">
+                        <div class="mahjong-board__points eastern-wind"></div>
+                    </div>
+                    <div class="mahjong-board__bone bone-disabled">
+                        <img class="mahjong-board__img" src="./bone.svg" alt="">
+                        <div class="mahjong-board__points north-wind"></div>
+                    </div>
+                    <div class="mahjong-board__bone bone-disabled">
+                        <img class="mahjong-board__img" src="./bone.svg" alt="">
+                        <div class="mahjong-board__points south-wind"></div>
+                    </div>
+                    <div class="mahjong-board__bone bone-disabled">
+                        <img class="mahjong-board__img" src="./bone.svg" alt="">
+                        <div class="mahjong-board__points green-dragon"></div>
+                    </div>
+                </div>
+                <div class="mahjong-board__row">
+                    <div class="mahjong-board__bone bone-disabled">
+                        <img class="mahjong-board__img" src="./bone.svg" alt="">
+                        <div class="mahjong-board__points symbol_1"></div>
+                    </div>
+                    <div class="mahjong-board__bone bone-disabled">
+                        <img class="mahjong-board__img" src="./bone.svg" alt="">
+                        <div class="mahjong-board__points west-wind"></div>
+                    </div>
+                    <div class="mahjong-board__bone bone-disabled">
+                        <img class="mahjong-board__img" src="./bone.svg" alt="">
+                        <div class="mahjong-board__points eastern-wind"></div>
+                    </div>
+                    <div class="mahjong-board__bone bone-disabled">
+                        <img class="mahjong-board__img" src="./bone.svg" alt="">
+                        <div class="mahjong-board__points north-wind"></div>
+                    </div>
+                    <div class="mahjong-board__bone bone-disabled">
+                        <img class="mahjong-board__img" src="./bone.svg" alt="">
+                        <div class="mahjong-board__points south-wind"></div>
+                    </div>
+                    <div class="mahjong-board__bone bone-disabled">
+                        <img class="mahjong-board__img" src="./bone.svg" alt="">
+                        <div class="mahjong-board__points green-dragon"></div>
+                    </div>
+                </div>
+                <div class="mahjong-board__row">
+                    <div class="mahjong-board__bone bone-disabled">
+                        <img class="mahjong-board__img" src="./bone.svg" alt="">
+                        <div class="mahjong-board__points symbol_1"></div>
+                    </div>
+                    <div class="mahjong-board__bone bone-disabled">
+                        <img class="mahjong-board__img" src="./bone.svg" alt="">
+                        <div class="mahjong-board__points west-wind"></div>
+                    </div>
+                    <div class="mahjong-board__bone bone-disabled">
+                        <img class="mahjong-board__img" src="./bone.svg" alt="">
+                        <div class="mahjong-board__points eastern-wind"></div>
+                    </div>
+                    <div class="mahjong-board__bone bone-disabled">
+                        <img class="mahjong-board__img" src="./bone.svg" alt="">
+                        <div class="mahjong-board__points north-wind"></div>
+                    </div>
+                    <div class="mahjong-board__bone bone-disabled">
+                        <img class="mahjong-board__img" src="./bone.svg" alt="">
+                        <div class="mahjong-board__points south-wind"></div>
+                    </div>
+                    <div class="mahjong-board__bone bone-disabled">
+                        <img class="mahjong-board__img" src="./bone.svg" alt="">
+                        <div class="mahjong-board__points green-dragon"></div>
+                    </div>
+                </div>
+                <div class="mahjong-board__row">
+                    <div class="mahjong-board__bone bone-disabled">
+                        <img class="mahjong-board__img" src="./bone.svg" alt="">
+                        <div class="mahjong-board__points symbol_1"></div>
+                    </div>
+                    <div class="mahjong-board__bone bone-disabled">
+                        <img class="mahjong-board__img" src="./bone.svg" alt="">
+                        <div class="mahjong-board__points west-wind"></div>
+                    </div>
+                    <div class="mahjong-board__bone bone-disabled">
+                        <img class="mahjong-board__img" src="./bone.svg" alt="">
+                        <div class="mahjong-board__points eastern-wind"></div>
+                    </div>
+                    <div class="mahjong-board__bone bone-disabled">
+                        <img class="mahjong-board__img" src="./bone.svg" alt="">
+                        <div class="mahjong-board__points north-wind"></div>
+                    </div>
+                    <div class="mahjong-board__bone bone-disabled">
+                        <img class="mahjong-board__img" src="./bone.svg" alt="">
+                        <div class="mahjong-board__points south-wind"></div>
+                    </div>
+                    <div class="mahjong-board__bone bone-disabled">
+                        <img class="mahjong-board__img" src="./bone.svg" alt="">
+                        <div class="mahjong-board__points green-dragon"></div>
+                    </div>
+                </div>
+                <div class="mahjong-board__row">
+                    <div class="mahjong-board__bone bone-disabled">
+                        <img class="mahjong-board__img" src="./bone.svg" alt="">
+                        <div class="mahjong-board__points symbol_1"></div>
+                    </div>
+                    <div class="mahjong-board__bone bone-disabled">
+                        <img class="mahjong-board__img" src="./bone.svg" alt="">
+                        <div class="mahjong-board__points west-wind"></div>
+                    </div>
+                    <div class="mahjong-board__bone bone-disabled">
+                        <img class="mahjong-board__img" src="./bone.svg" alt="">
+                        <div class="mahjong-board__points eastern-wind"></div>
+                    </div>
+                    <div class="mahjong-board__bone bone-disabled">
+                        <img class="mahjong-board__img" src="./bone.svg" alt="">
+                        <div class="mahjong-board__points north-wind"></div>
+                    </div>
+                    <div class="mahjong-board__bone bone-disabled">
+                        <img class="mahjong-board__img" src="./bone.svg" alt="">
+                        <div class="mahjong-board__points south-wind"></div>
+                    </div>
+                    <div class="mahjong-board__bone bone-disabled">
+                        <img class="mahjong-board__img" src="./bone.svg" alt="">
+                        <div class="mahjong-board__points green-dragon"></div>
+                    </div>
+                </div>
+                <div class="mahjong-board__row">
+                    <div class="mahjong-board__bone bone-disabled">
+                        <img class="mahjong-board__img" src="./bone.svg" alt="">
+                        <div class="mahjong-board__points symbol_1"></div>
+                    </div>
+                    <div class="mahjong-board__bone bone-disabled">
+                        <img class="mahjong-board__img" src="./bone.svg" alt="">
+                        <div class="mahjong-board__points west-wind"></div>
+                    </div>
+                    <div class="mahjong-board__bone bone-disabled">
+                        <img class="mahjong-board__img" src="./bone.svg" alt="">
+                        <div class="mahjong-board__points eastern-wind"></div>
+                    </div>
+                    <div class="mahjong-board__bone bone-disabled">
+                        <img class="mahjong-board__img" src="./bone.svg" alt="">
+                        <div class="mahjong-board__points north-wind"></div>
+                    </div>
+                    <div class="mahjong-board__bone bone-disabled">
+                        <img class="mahjong-board__img" src="./bone.svg" alt="">
+                        <div class="mahjong-board__points south-wind"></div>
+                    </div>
+                    <div class="mahjong-board__bone bone-disabled">
+                        <img class="mahjong-board__img" src="./bone.svg" alt="">
+                        <div class="mahjong-board__points green-dragon"></div>
+                    </div>
+                </div>
+                <div class="mahjong-board__pyramid">
+                    <div class="mahjong-board__row">
+                        <div class="mahjong-board__bone bone-disabled">
+                            <img class="mahjong-board__img" src="./bone.svg" alt="">
+                            <div class="mahjong-board__points symbol_1"></div>
+                        </div>
+                        <div class="mahjong-board__bone bone-disabled">
+                            <img class="mahjong-board__img" src="./bone.svg" alt="">
+                            <div class="mahjong-board__points west-wind"></div>
+                        </div>
+                        <div class="mahjong-board__bone bone-disabled">
+                            <img class="mahjong-board__img" src="./bone.svg" alt="">
+                            <div class="mahjong-board__points eastern-wind"></div>
+                        </div>
+                        <div class="mahjong-board__bone bone-disabled">
+                            <img class="mahjong-board__img" src="./bone.svg" alt="">
+                            <div class="mahjong-board__points north-wind"></div>
+                        </div>
+                    </div>
+                    <div class="mahjong-board__row">
+                        <div class="mahjong-board__bone bone-disabled">
+                            <img class="mahjong-board__img" src="./bone.svg" alt="">
+                            <div class="mahjong-board__points symbol_1"></div>
+                        </div>
+                        <div class="mahjong-board__bone bone-disabled">
+                            <img class="mahjong-board__img" src="./bone.svg" alt="">
+                            <div class="mahjong-board__points west-wind"></div>
+                        </div>
+                        <div class="mahjong-board__bone bone-disabled">
+                            <img class="mahjong-board__img" src="./bone.svg" alt="">
+                            <div class="mahjong-board__points eastern-wind"></div>
+                        </div>
+                        <div class="mahjong-board__bone bone-disabled">
+                            <img class="mahjong-board__img" src="./bone.svg" alt="">
+                            <div class="mahjong-board__points north-wind"></div>
+                        </div>
+                    </div>
+                    <div class="mahjong-board__row">
+                        <div class="mahjong-board__bone bone-disabled">
+                            <img class="mahjong-board__img" src="./bone.svg" alt="">
+                            <div class="mahjong-board__points symbol_1"></div>
+                        </div>
+                        <div class="mahjong-board__bone bone-disabled">
+                            <img class="mahjong-board__img" src="./bone.svg" alt="">
+                            <div class="mahjong-board__points west-wind"></div>
+                        </div>
+                        <div class="mahjong-board__bone bone-disabled">
+                            <img class="mahjong-board__img" src="./bone.svg" alt="">
+                            <div class="mahjong-board__points eastern-wind"></div>
+                        </div>
+                        <div class="mahjong-board__bone bone-disabled">
+                            <img class="mahjong-board__img" src="./bone.svg" alt="">
+                            <div class="mahjong-board__points north-wind"></div>
+                        </div>
+                    </div>
+                    <div class="mahjong-board__row">
+                        <div class="mahjong-board__bone bone-disabled">
+                            <img class="mahjong-board__img" src="./bone.svg" alt="">
+                            <div class="mahjong-board__points symbol_1"></div>
+                        </div>
+                        <div class="mahjong-board__bone bone-disabled">
+                            <img class="mahjong-board__img" src="./bone.svg" alt="">
+                            <div class="mahjong-board__points west-wind"></div>
+                        </div>
+                        <div class="mahjong-board__bone bone-disabled">
+                            <img class="mahjong-board__img" src="./bone.svg" alt="">
+                            <div class="mahjong-board__points eastern-wind"></div>
+                        </div>
+                        <div class="mahjong-board__bone bone-disabled">
+                            <img class="mahjong-board__img" src="./bone.svg" alt="">
+                            <div class="mahjong-board__points north-wind"></div>
+                        </div>
+                    </div>
+                    <div class="mahjong-board__pyramid">
+                        <div class="mahjong-board__row">
+                            <div class="mahjong-board__bone bone-disabled">
+                                <img class="mahjong-board__img" src="./bone.svg" alt="">
+                                <div class="mahjong-board__points symbol_1"></div>
+                            </div>
+                            <div class="mahjong-board__bone bone-disabled">
+                                <img class="mahjong-board__img" src="./bone.svg" alt="">
+                                <div class="mahjong-board__points west-wind"></div>
+                            </div>
+                        </div>
+                        <div class="mahjong-board__row">
+                            <div class="mahjong-board__bone bone-disabled">
+                                <img class="mahjong-board__img" src="./bone.svg" alt="">
+                                <div class="mahjong-board__points symbol_1"></div>
+                            </div>
+                            <div class="mahjong-board__bone bone-disabled">
+                                <img class="mahjong-board__img" src="./bone.svg" alt="">
+                                <div class="mahjong-board__points west-wind"></div>
+                            </div>
+                        </div>
+                        <div class="mahjong-board__pyramid">
+                            <div class="mahjong-board__row">
+                                <div class="mahjong-board__bone bone-disabled">
+                                    <img class="mahjong-board__img" src="./bone.svg" alt="">
+                                    <div class="mahjong-board__points symbol_1"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

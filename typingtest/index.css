@@ -1,0 +1,53 @@
+.typing-field {
+  max-width: 82%;
+  margin: auto;
+  font-family: sans-serif;
+}
+.typing-field__row {
+  display: flex;
+  border-bottom: 1px solid #E8E8E8;
+  padding-bottom: 3px;
+}
+.typing-field__row:first-child {
+  border-bottom: 1px solid #E8E8E8;
+}
+.typing-field__row .typing-field__cell {
+  padding: 0.6em;
+}
+.typing-field__row .typing-field__cell.correct .typing-field__inner {
+  color: #96c691;
+}
+.typing-field__row .typing-field__cell.wrong .typing-field__inner {
+  color: #ff576c;
+}
+.typing-field__row .typing-field__cell.typing-cursor {
+  background-color: rgba(221, 221, 221, 0.65);
+  border-radius: 10px;
+}
+.typing-field__analytic {
+  display: flex;
+  max-width: 50%;
+  margin: 10rem auto 0 auto;
+}
+.typing-field__analytic .typing-field__block {
+  flex: 0 0 20%;
+  padding: 0 10px;
+}
+.typing-field__analytic .typing-field__count {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+.typing-field__analytic .typing-field__count span.typing-field__num {
+  font-size: 18px;
+  font-weight: 700;
+  border-bottom: 1px solid #E8E8E8;
+  padding: 1rem 0;
+}
+.typing-field__analytic .typing-field__count span.typing-field__text {
+  font-size: 14px;
+  color: #4f4e4e;
+  padding: 1rem 0;
+}
+
+/*# sourceMappingURL=index.css.map */

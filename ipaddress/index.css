@@ -1,0 +1,47 @@
+* {
+  box-sizing: border-box; }
+
+.address-field {
+  display: flex;
+  max-width: 1200px;
+  margin: 40px auto 0 auto;
+  font-family: sans-serif;
+  border: 1px solid #e8e8e8;
+  border-radius: 10px;
+  padding: 50px; }
+  .address-field__info {
+    width: 50%;
+    padding: 0 15px;
+    font-size: 14px; }
+  .address-field__row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px; }
+    .address-field__row div {
+      width: 200px;
+      white-space: nowrap; }
+      .address-field__row div:last-child {
+        text-align: left; }
+  .address-field__title .address-field__text {
+    font-size: 50px !important;
+    color: #000;
+    margin: 0 0 20px; }
+  .address-field__subtitle {
+    max-width: 96%; }
+    .address-field__subtitle .address-field__text {
+      color: #404040;
+      font-size: 14px;
+      margin: 0 0 10px;
+      display: block;
+      line-height: 1;
+      font-weight: 700; }
+    .address-field__subtitle .address-field__data {
+      color: #8f8f8f;
+      font-size: 16px;
+      position: relative; }
+  .address-field__map {
+    width: 50%;
+    background-color: #e8e8e8;
+    border-radius: 10px; }
+
+/*# sourceMappingURL=index.css.map */

@@ -1,0 +1,555 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Kakuro</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+<div class="game__main">
+    <div class="game__container">
+        <div class="game__kakuro-field kakuro-field">
+            <div class="kakuro-field">
+                <div class="kakuro-field__row">
+                    <div class="kakuro-field__cell shared-cell">
+                        <div class="kakuro-field__top-num"></div>
+                        <div class="kakuro-field__bottom-num"></div>
+                    </div>
+                    <div class="kakuro-field__cell total-cell">
+                        <div class="kakuro-field__top-num"></div>
+                        <div class="kakuro-field__bottom-num">11</div>
+                    </div>
+                    <div class="kakuro-field__cell total-cell">
+                        <div class="kakuro-field__top-num"></div>
+                        <div class="kakuro-field__bottom-num">13</div>
+                    </div>
+                    <div class="kakuro-field__cell shared-cell">
+                        <div class="kakuro-field__top-num"></div>
+                        <div class="kakuro-field__bottom-num"></div>
+                    </div>
+                    <div class="kakuro-field__cell total-cell">
+                        <div class="kakuro-field__top-num"></div>
+                        <div class="kakuro-field__bottom-num">22</div>
+                    </div>
+                    <div class="kakuro-field__cell total-cell">
+                        <div class="kakuro-field__top-num"></div>
+                        <div class="kakuro-field__bottom-num">17</div>
+                    </div>
+                    <div class="kakuro-field__cell shared-cell">
+                        <div class="kakuro-field__top-num"></div>
+                        <div class="kakuro-field__bottom-num"></div>
+                    </div>
+                    <div class="kakuro-field__cell total-cell">
+                        <div class="kakuro-field__top-num"></div>
+                        <div class="kakuro-field__bottom-num">19</div>
+                    </div>
+                    <div class="kakuro-field__cell total-cell">
+                        <div class="kakuro-field__top-num"></div>
+                        <div class="kakuro-field__bottom-num">16</div>
+                    </div>
+                </div>
+                <div class="kakuro-field__row">
+                    <div class="kakuro-field__cell total-cell">
+                        <div class="kakuro-field__top-num">17</div>
+                        <div class="kakuro-field__bottom-num"></div>
+                    </div>
+                    <div class="kakuro-field__cell num-cell mini-active">
+                        <input autocomplete="disabled" maxlength="9" size="1" />
+                        <div class="kakuro-field__mini-num">
+                            <div class="kakuro-field__num">1</div>
+                            <div class="kakuro-field__num">2</div>
+                            <div class="kakuro-field__num">3</div>
+                        </div>
+                    </div>
+                    <div class="kakuro-field__cell num-cell red-cell">
+                        <input autocomplete="disabled" maxlength="9" size="1" value="5"/>
+                        <div class="kakuro-field__mini-num">
+                            <div class="kakuro-field__num">1</div>
+                            <div class="kakuro-field__num">2</div>
+                            <div class="kakuro-field__num">3</div>
+                        </div>
+                    </div>
+                    <div class="kakuro-field__cell total-cell">
+                        <div class="kakuro-field__top-num">17</div>
+                        <div class="kakuro-field__bottom-num">14</div>
+                    </div>
+                    <div class="kakuro-field__cell num-cell">
+                        <input autocomplete="disabled" maxlength="9" size="1"/>
+                        <div class="kakuro-field__mini-num">
+                            <div class="kakuro-field__num">1</div>
+                            <div class="kakuro-field__num">2</div>
+                            <div class="kakuro-field__num">3</div>
+                        </div>
+                    </div>
+                    <div class="kakuro-field__cell num-cell green-cell">
+                        <input autocomplete="disabled" maxlength="9" size="1" value="3"/>
+                        <div class="kakuro-field__mini-num">
+                            <div class="kakuro-field__num">1</div>
+                            <div class="kakuro-field__num">2</div>
+                            <div class="kakuro-field__num">3</div>
+                        </div>
+                    </div>
+                    <div class="kakuro-field__cell total-cell">
+                        <div class="kakuro-field__top-num">15</div>
+                        <div class="kakuro-field__bottom-num">16</div>
+                    </div>
+                    <div class="kakuro-field__cell num-cell">
+                        <input autocomplete="disabled" maxlength="9" size="1"/>
+                        <div class="kakuro-field__mini-num">
+                            <div class="kakuro-field__num">1</div>
+                            <div class="kakuro-field__num">2</div>
+                            <div class="kakuro-field__num">3</div>
+                        </div>
+                    </div>
+                    <div class="kakuro-field__cell num-cell">
+                        <input autocomplete="disabled" maxlength="9" size="1"/>
+                        <div class="kakuro-field__mini-num">
+                            <div class="kakuro-field__num">1</div>
+                            <div class="kakuro-field__num">2</div>
+                            <div class="kakuro-field__num">3</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="kakuro-field__row">
+                    <div class="kakuro-field__cell total-cell">
+                        <div class="kakuro-field__top-num">39</div>
+                        <div class="kakuro-field__bottom-num"></div>
+                    </div>
+                    <div class="kakuro-field__cell num-cell">
+                        <input autocomplete="disabled" maxlength="9" size="1"/>
+                        <div class="kakuro-field__mini-num">
+                            <div class="kakuro-field__num">1</div>
+                            <div class="kakuro-field__num">2</div>
+                            <div class="kakuro-field__num">3</div>
+                        </div>
+                    </div>
+                    <div class="kakuro-field__cell num-cell">
+                        <input autocomplete="disabled" maxlength="9" size="1"/>
+                        <div class="kakuro-field__mini-num">
+                            <div class="kakuro-field__num">1</div>
+                            <div class="kakuro-field__num">2</div>
+                            <div class="kakuro-field__num">3</div>
+                        </div>
+                    </div>
+                    <div class="kakuro-field__cell num-cell">
+                        <input autocomplete="disabled" maxlength="9" size="1"/>
+                        <div class="kakuro-field__mini-num">
+                            <div class="kakuro-field__num">1</div>
+                            <div class="kakuro-field__num">2</div>
+                            <div class="kakuro-field__num">3</div>
+                        </div>
+                    </div>
+                    <div class="kakuro-field__cell num-cell">
+                        <input autocomplete="disabled" maxlength="9" size="1"/>
+                        <div class="kakuro-field__mini-num">
+                            <div class="kakuro-field__num">1</div>
+                            <div class="kakuro-field__num">2</div>
+                            <div class="kakuro-field__num">3</div>
+                        </div>
+                    </div>
+                    <div class="kakuro-field__cell num-cell">
+                        <input autocomplete="disabled" maxlength="9" size="1"/>
+                        <div class="kakuro-field__mini-num">
+                            <div class="kakuro-field__num">1</div>
+                            <div class="kakuro-field__num">2</div>
+                            <div class="kakuro-field__num">3</div>
+                        </div>
+                    </div>
+                    <div class="kakuro-field__cell num-cell">
+                        <input autocomplete="disabled" maxlength="9" size="1"/>
+                        <div class="kakuro-field__mini-num">
+                            <div class="kakuro-field__num">1</div>
+                            <div class="kakuro-field__num">2</div>
+                            <div class="kakuro-field__num">3</div>
+                        </div>
+                    </div>
+                    <div class="kakuro-field__cell num-cell">
+                        <input autocomplete="disabled" maxlength="9" size="1"/>
+                        <div class="kakuro-field__mini-num">
+                            <div class="kakuro-field__num">1</div>
+                            <div class="kakuro-field__num">2</div>
+                            <div class="kakuro-field__num">3</div>
+                        </div>
+                    </div>
+                    <div class="kakuro-field__cell num-cell">
+                        <input autocomplete="disabled" maxlength="9" size="1"/>
+                        <div class="kakuro-field__mini-num">
+                            <div class="kakuro-field__num">1</div>
+                            <div class="kakuro-field__num">2</div>
+                            <div class="kakuro-field__num">3</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="kakuro-field__row">
+                    <div class="kakuro-field__cell shared-cell">
+                        <div class="kakuro-field__top-num"></div>
+                        <div class="kakuro-field__bottom-num"></div>
+                    </div>
+                    <div class="kakuro-field__cell total-cell">
+                        <div class="kakuro-field__top-num"></div>
+                        <div class="kakuro-field__bottom-num">16</div>
+                    </div>
+                    <div class="kakuro-field__cell total-cell">
+                        <div class="kakuro-field__top-num">12</div>
+                        <div class="kakuro-field__bottom-num">17</div>
+                    </div>
+                    <div class="kakuro-field__cell num-cell">
+                        <input autocomplete="disabled" maxlength="9" size="1"/>
+                        <div class="kakuro-field__mini-num">
+                            <div class="kakuro-field__num">1</div>
+                            <div class="kakuro-field__num">2</div>
+                            <div class="kakuro-field__num">3</div>
+                        </div>
+                    </div>
+                    <div class="kakuro-field__cell num-cell">
+                        <input autocomplete="disabled" maxlength="9" size="1"/>
+                        <div class="kakuro-field__mini-num">
+                            <div class="kakuro-field__num">1</div>
+                            <div class="kakuro-field__num">2</div>
+                            <div class="kakuro-field__num">3</div>
+                        </div>
+                    </div>
+                    <div class="kakuro-field__cell total-cell">
+                        <div class="kakuro-field__top-num">9</div>
+                        <div class="kakuro-field__bottom-num">28</div>
+                    </div>
+                    <div class="kakuro-field__cell num-cell">
+                        <input autocomplete="disabled" maxlength="9" size="1"/>
+                        <div class="kakuro-field__mini-num">
+                            <div class="kakuro-field__num">1</div>
+                            <div class="kakuro-field__num">2</div>
+                            <div class="kakuro-field__num">3</div>
+                        </div>
+                    </div>
+                    <div class="kakuro-field__cell num-cell">
+                        <input autocomplete="disabled" maxlength="9" size="1"/>
+                        <div class="kakuro-field__mini-num">
+                            <div class="kakuro-field__num">1</div>
+                            <div class="kakuro-field__num">2</div>
+                            <div class="kakuro-field__num">3</div>
+                        </div>
+                    </div>
+                    <div class="kakuro-field__cell total-cell">
+                        <div class="kakuro-field__top-num"></div>
+                        <div class="kakuro-field__bottom-num">6</div>
+                    </div>
+                </div>
+                <div class="kakuro-field__row">
+                    <div class="kakuro-field__cell total-cell">
+                        <div class="kakuro-field__top-num">12</div>
+                        <div class="kakuro-field__bottom-num"></div>
+                    </div>
+                    <div class="kakuro-field__cell num-cell">
+                        <input autocomplete="disabled" maxlength="9" size="1"/>
+                        <div class="kakuro-field__mini-num">
+                            <div class="kakuro-field__num">1</div>
+                            <div class="kakuro-field__num">2</div>
+                            <div class="kakuro-field__num">3</div>
+                        </div>
+                    </div>
+                    <div class="kakuro-field__cell num-cell">
+                        <input autocomplete="disabled" maxlength="9" size="1"/>
+                        <div class="kakuro-field__mini-num">
+                            <div class="kakuro-field__num">1</div>
+                            <div class="kakuro-field__num">2</div>
+                            <div class="kakuro-field__num">3</div>
+                        </div>
+                    </div>
+                    <div class="kakuro-field__cell total-cell">
+                        <div class="kakuro-field__top-num">9</div>
+                        <div class="kakuro-field__bottom-num"></div>
+                    </div>
+                    <div class="kakuro-field__cell num-cell">
+                        <input autocomplete="disabled" maxlength="9" size="1"/>
+                        <div class="kakuro-field__mini-num">
+                            <div class="kakuro-field__num">1</div>
+                            <div class="kakuro-field__num">2</div>
+                            <div class="kakuro-field__num">3</div>
+                        </div>
+                    </div>
+                    <div class="kakuro-field__cell num-cell">
+                        <input autocomplete="disabled" maxlength="9" size="1"/>
+                        <div class="kakuro-field__mini-num">
+                            <div class="kakuro-field__num">1</div>
+                            <div class="kakuro-field__num">2</div>
+                            <div class="kakuro-field__num">3</div>
+                        </div>
+                    </div>
+                    <div class="kakuro-field__cell total-cell">
+                        <div class="kakuro-field__top-num">4</div>
+                        <div class="kakuro-field__bottom-num"></div>
+                    </div>
+                    <div class="kakuro-field__cell num-cell">
+                        <input autocomplete="disabled" maxlength="9" size="1"/>
+                        <div class="kakuro-field__mini-num">
+                            <div class="kakuro-field__num">1</div>
+                            <div class="kakuro-field__num">2</div>
+                            <div class="kakuro-field__num">3</div>
+                        </div>
+                    </div>
+                    <div class="kakuro-field__cell num-cell">
+                        <input autocomplete="disabled" maxlength="9" size="1"/>
+                        <div class="kakuro-field__mini-num">
+                            <div class="kakuro-field__num">1</div>
+                            <div class="kakuro-field__num">2</div>
+                            <div class="kakuro-field__num">3</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="kakuro-field__row">
+                    <div class="kakuro-field__cell total-cell">
+                        <div class="kakuro-field__top-num">8</div>
+                        <div class="kakuro-field__bottom-num"></div>
+                    </div>
+                    <div class="kakuro-field__cell num-cell">
+                        <input autocomplete="disabled" maxlength="9" size="1"/>
+                        <div class="kakuro-field__mini-num">
+                            <div class="kakuro-field__num">1</div>
+                            <div class="kakuro-field__num">2</div>
+                            <div class="kakuro-field__num">3</div>
+                        </div>
+                    </div>
+                    <div class="kakuro-field__cell num-cell">
+                        <input autocomplete="disabled" maxlength="9" size="1"/>
+                        <div class="kakuro-field__mini-num">
+                            <div class="kakuro-field__num">1</div>
+                            <div class="kakuro-field__num">2</div>
+                            <div class="kakuro-field__num">3</div>
+                        </div>
+                    </div>
+                    <div class="kakuro-field__cell total-cell">
+                        <div class="kakuro-field__top-num">5</div>
+                        <div class="kakuro-field__bottom-num">16</div>
+                    </div>
+                    <div class="kakuro-field__cell num-cell">
+                        <input autocomplete="disabled" maxlength="9" size="1"/>
+                        <div class="kakuro-field__mini-num">
+                            <div class="kakuro-field__num">1</div>
+                            <div class="kakuro-field__num">2</div>
+                            <div class="kakuro-field__num">3</div>
+                        </div>
+                    </div>
+                    <div class="kakuro-field__cell num-cell">
+                        <input autocomplete="disabled" maxlength="9" size="1"/>
+                        <div class="kakuro-field__mini-num">
+                            <div class="kakuro-field__num">1</div>
+                            <div class="kakuro-field__num">2</div>
+                            <div class="kakuro-field__num">3</div>
+                        </div>
+                    </div>
+                    <div class="kakuro-field__cell total-cell">
+                        <div class="kakuro-field__top-num">12</div>
+                        <div class="kakuro-field__bottom-num">16</div>
+                    </div>
+                    <div class="kakuro-field__cell num-cell">
+                        <input autocomplete="disabled" maxlength="9" size="1"/>
+                        <div class="kakuro-field__mini-num">
+                            <div class="kakuro-field__num">1</div>
+                            <div class="kakuro-field__num">2</div>
+                            <div class="kakuro-field__num">3</div>
+                        </div>
+                    </div>
+                    <div class="kakuro-field__cell num-cell">
+                        <input autocomplete="disabled" maxlength="9" size="1"/>
+                        <div class="kakuro-field__mini-num">
+                            <div class="kakuro-field__num">1</div>
+                            <div class="kakuro-field__num">2</div>
+                            <div class="kakuro-field__num">3</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="kakuro-field__row">
+                    <div class="kakuro-field__cell shared-cell">
+                        <div class="kakuro-field__top-num"></div>
+                        <div class="kakuro-field__bottom-num"></div>
+                    </div>
+                    <div class="kakuro-field__cell total-cell">
+                        <div class="kakuro-field__top-num">11</div>
+                        <div class="kakuro-field__bottom-num">4</div>
+                    </div>
+                    <div class="kakuro-field__cell num-cell">
+                        <input autocomplete="disabled" maxlength="9" size="1"/>
+                        <div class="kakuro-field__mini-num">
+                            <div class="kakuro-field__num">1</div>
+                            <div class="kakuro-field__num">2</div>
+                            <div class="kakuro-field__num">3</div>
+                        </div>
+                    </div>
+                    <div class="kakuro-field__cell num-cell">
+                        <input autocomplete="disabled" maxlength="9" size="1"/>
+                        <div class="kakuro-field__mini-num">
+                            <div class="kakuro-field__num">1</div>
+                            <div class="kakuro-field__num">2</div>
+                            <div class="kakuro-field__num">3</div>
+                        </div>
+                    </div>
+                    <div class="kakuro-field__cell total-cell">
+                        <div class="kakuro-field__top-num">16</div>
+                        <div class="kakuro-field__bottom-num">5</div>
+                    </div>
+                    <div class="kakuro-field__cell num-cell">
+                        <input autocomplete="disabled" maxlength="9" size="1"/>
+                        <div class="kakuro-field__mini-num">
+                            <div class="kakuro-field__num">1</div>
+                            <div class="kakuro-field__num">2</div>
+                            <div class="kakuro-field__num">3</div>
+                        </div>
+                    </div>
+                    <div class="kakuro-field__cell num-cell">
+                        <input autocomplete="disabled" maxlength="9" size="1"/>
+                        <div class="kakuro-field__mini-num">
+                            <div class="kakuro-field__num">1</div>
+                            <div class="kakuro-field__num">2</div>
+                            <div class="kakuro-field__num">3</div>
+                        </div>
+                    </div>
+                    <div class="kakuro-field__cell total-cell">
+                        <div class="kakuro-field__top-num"></div>
+                        <div class="kakuro-field__bottom-num">5</div>
+                    </div>
+                    <div class="kakuro-field__cell total-cell">
+                        <div class="kakuro-field__top-num"></div>
+                        <div class="kakuro-field__bottom-num">7</div>
+                    </div>
+                </div>
+                <div class="kakuro-field__row">
+                    <div class="kakuro-field__cell total-cell">
+                        <div class="kakuro-field__top-num">43</div>
+                        <div class="kakuro-field__bottom-num"></div>
+                    </div>
+                    <div class="kakuro-field__cell num-cell">
+                        <input autocomplete="disabled" maxlength="9" size="1"/>
+                        <div class="kakuro-field__mini-num">
+                            <div class="kakuro-field__num">1</div>
+                            <div class="kakuro-field__num">2</div>
+                            <div class="kakuro-field__num">3</div>
+                        </div>
+                    </div>
+                    <div class="kakuro-field__cell num-cell">
+                        <input autocomplete="disabled" maxlength="9" size="1"/>
+                        <div class="kakuro-field__mini-num">
+                            <div class="kakuro-field__num">1</div>
+                            <div class="kakuro-field__num">2</div>
+                            <div class="kakuro-field__num">3</div>
+                        </div>
+                    </div>
+                    <div class="kakuro-field__cell num-cell">
+                        <input autocomplete="disabled" maxlength="9" size="1"/>
+                        <div class="kakuro-field__mini-num">
+                            <div class="kakuro-field__num">1</div>
+                            <div class="kakuro-field__num">2</div>
+                            <div class="kakuro-field__num">3</div>
+                        </div>
+                    </div>
+                    <div class="kakuro-field__cell num-cell">
+                        <input autocomplete="disabled" maxlength="9" size="1"/>
+                        <div class="kakuro-field__mini-num">
+                            <div class="kakuro-field__num">1</div>
+                            <div class="kakuro-field__num">2</div>
+                            <div class="kakuro-field__num">3</div>
+                        </div>
+                    </div>
+                    <div class="kakuro-field__cell num-cell">
+                        <input autocomplete="disabled" maxlength="9" size="1"/>
+                        <div class="kakuro-field__mini-num">
+                            <div class="kakuro-field__num">1</div>
+                            <div class="kakuro-field__num">2</div>
+                            <div class="kakuro-field__num">3</div>
+                        </div>
+                    </div>
+                    <div class="kakuro-field__cell num-cell">
+                        <input autocomplete="disabled" maxlength="9" size="1"/>
+                        <div class="kakuro-field__mini-num">
+                            <div class="kakuro-field__num">1</div>
+                            <div class="kakuro-field__num">2</div>
+                            <div class="kakuro-field__num">3</div>
+                        </div>
+                    </div>
+                    <div class="kakuro-field__cell num-cell">
+                        <input autocomplete="disabled" maxlength="9" size="1"/>
+                        <div class="kakuro-field__mini-num">
+                            <div class="kakuro-field__num">1</div>
+                            <div class="kakuro-field__num">2</div>
+                            <div class="kakuro-field__num">3</div>
+                        </div>
+                    </div>
+                    <div class="kakuro-field__cell num-cell">
+                        <input autocomplete="disabled" maxlength="9" size="1"/>
+                        <div class="kakuro-field__mini-num">
+                            <div class="kakuro-field__num">1</div>
+                            <div class="kakuro-field__num">2</div>
+                            <div class="kakuro-field__num">3</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="kakuro-field__row">
+                    <div class="kakuro-field__cell total-cell">
+                        <div class="kakuro-field__top-num">8</div>
+                        <div class="kakuro-field__bottom-num"></div>
+                    </div>
+                    <div class="kakuro-field__cell num-cell">
+                        <input autocomplete="disabled" maxlength="9" size="1"/>
+                        <div class="kakuro-field__mini-num">
+                            <div class="kakuro-field__num">1</div>
+                            <div class="kakuro-field__num">2</div>
+                            <div class="kakuro-field__num">3</div>
+                        </div>
+                    </div>
+                    <div class="kakuro-field__cell num-cell">
+                        <input autocomplete="disabled" maxlength="9" size="1"/>
+                        <div class="kakuro-field__mini-num">
+                            <div class="kakuro-field__num">1</div>
+                            <div class="kakuro-field__num">2</div>
+                            <div class="kakuro-field__num">3</div>
+                        </div>
+                    </div>
+                    <div class="kakuro-field__cell total-cell">
+                        <div class="kakuro-field__top-num">8</div>
+                        <div class="kakuro-field__bottom-num"></div>
+                    </div>
+                    <div class="kakuro-field__cell num-cell">
+                        <input autocomplete="disabled" maxlength="9" size="1"/>
+                        <div class="kakuro-field__mini-num">
+                            <div class="kakuro-field__num">1</div>
+                            <div class="kakuro-field__num">2</div>
+                            <div class="kakuro-field__num">3</div>
+                        </div>
+                    </div>
+                    <div class="kakuro-field__cell num-cell">
+                        <input autocomplete="disabled" maxlength="9" size="1"/>
+                        <div class="kakuro-field__mini-num">
+                            <div class="kakuro-field__num">1</div>
+                            <div class="kakuro-field__num">2</div>
+                            <div class="kakuro-field__num">3</div>
+                        </div>
+                    </div>
+                    <div class="kakuro-field__cell total-cell">
+                        <div class="kakuro-field__top-num">3</div>
+                        <div class="kakuro-field__bottom-num"></div>
+                    </div>
+                    <div class="kakuro-field__cell num-cell">
+                        <input autocomplete="disabled" maxlength="9" size="1"/>
+                        <div class="kakuro-field__mini-num">
+                            <div class="kakuro-field__num">1</div>
+                            <div class="kakuro-field__num">2</div>
+                            <div class="kakuro-field__num">3</div>
+                        </div>
+                    </div>
+                    <div class="kakuro-field__cell num-cell">
+                        <input autocomplete="disabled" maxlength="9" size="1"/>
+                        <div class="kakuro-field__mini-num">
+                            <div class="kakuro-field__num">1</div>
+                            <div class="kakuro-field__num">2</div>
+                            <div class="kakuro-field__num">3</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

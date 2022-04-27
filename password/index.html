@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Password</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="//pro.fontawesome.com/releases/v5.10.1/css/all.css"
+          integrity="sha384-y++enYq9sdV7msNmXr08kJdkX4zEI1gMjjkw0l9ttOepH7fMdhb7CePwuRQCfwCr" crossorigin="anonymous">
+    <script src="https://use.fontawesome.com/releases/v5.15.4/js/all.js" data-auto-replace-svg="nest"></script>
+</head>
+<body>
+<div class="game__main">
+    <div class="game__container">
+        <div class="game__pass-field pass-field">
+            <input class="pass-field__input very-weak" spellcheck="false" value="3B^zM$">
+            <div class="pass-field__row">
+                <i class="far fa-clone"></i>
+                <i class="fas fa-sync"></i>
+            </div>
+        </div>
+        <div class="game__pass-action pass-action">
+            <div class="pass-action__row">
+                <div class="pass-action__block">
+                    <input class="pass-action__checkbox" type="checkbox" id="passAction_lowercase" checked >
+                    <label class="pass-action__label" for="passAction_lowercase">
+                        abcd
+                    </label>
+                </div>
+                <div class="pass-action__block">
+                    <input class="pass-action__checkbox" type="checkbox" id="passAction_uppercase" checked>
+                    <label class="pass-action__label" for="passAction_uppercase">
+                        ABCD
+                    </label>
+                </div>
+                <div class="pass-action__block">
+                    <input class="pass-action__checkbox" type="checkbox" id="passAction_num" checked>
+                    <label class="pass-action__label" for="passAction_num">
+                        1234
+                    </label>
+                </div>
+                <div class="pass-action__block">
+                    <input class="pass-action__checkbox" type="checkbox" id="passAction_sym">
+                    <label class="pass-action__label" for="passAction_sym">
+                        @#$%
+                    </label>
+                </div>
+
+
+            </div>
+            <div class="pass-action__range">
+                <input class="pass-action__input" type="range" min="4" max="50">
+                <span class="pass-action__counter">23</span>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

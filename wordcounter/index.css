@@ -1,0 +1,142 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.wordcounter-field {
+  max-width: 809px;
+  margin: 20px auto 0 auto;
+  display: grid;
+  grid-auto-flow: row;
+  gap: 16px;
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 20px;
+  background-color: #f6f5ef;
+  border-radius: 8px;
+}
+.wordcounter-field__main-text {
+  min-height: 200px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0 2px 4px 0, rgba(0, 0, 0, 0.05) 0 1px 2px 0;
+  width: 100%;
+  display: flex;
+  border-radius: 8px;
+  overflow: hidden;
+}
+.wordcounter-field__main-text .wordcounter-field__content {
+  caret-color: #e15a46;
+  padding: 16px;
+  height: 200px;
+  color: rgba(0, 0, 0, 0.87);
+  font-size: 16px;
+  line-height: 22px;
+  width: 100%;
+  flex: 1 1 auto;
+  border: none;
+  resize: none;
+  outline: none;
+  background-color: #fff;
+}
+.wordcounter-field .wordcounter-counters {
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: rgba(0, 0, 0, 0.1) 0 2px 4px 0, rgba(0, 0, 0, 0.05) 0 1px 2px 0;
+  background-color: #fff;
+}
+.wordcounter-field .wordcounter-counters__list {
+  display: flex;
+  justify-content: space-between;
+  padding: 16px 0;
+}
+.wordcounter-field .wordcounter-counters__list-item {
+  flex: 0 0 16.666%;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  border-right: 1px solid rgba(0, 0, 0, 0.08);
+}
+.wordcounter-field .wordcounter-counters__list-item:last-child {
+  border: none;
+}
+.wordcounter-field .wordcounter-counters__list-item span.wordcounter-counters__number {
+  margin-bottom: 4px;
+  font-size: 28px;
+  line-height: 32px;
+  color: rgba(0, 0, 0, 0.87);
+}
+.wordcounter-field .wordcounter-counters__list-item span.wordcounter-counters__text {
+  color: rgba(0, 0, 0, 0.66);
+  padding: 0 16px;
+  font-size: 13px;
+  line-height: 16px;
+}
+.wordcounter-field__top {
+  display: grid;
+  grid-template-columns: repeat(2, 376px);
+  gap: 16px;
+}
+.wordcounter-field__top .wordcounter__top-block {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0 2px 4px 0, rgba(0, 0, 0, 0.05) 0 1px 2px 0;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  padding: 8px 16px 0;
+}
+.wordcounter-field__top .wordcounter-field__phrases .wordcounter-field__tabs {
+  display: flex;
+}
+.wordcounter-field__top .wordcounter-field__title {
+  display: flex;
+  -webkit-box-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  align-items: center;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+}
+.wordcounter-field__top .wordcounter-field__title h5.wordcounter-field__head {
+  font-weight: 700;
+  padding: 8px 0 16px;
+  font-size: 16px;
+}
+.wordcounter-field__top .wordcounter-field__title a.wordcounter-field__tab {
+  cursor: pointer;
+  outline-style: none;
+  padding: 9px;
+  color: rgba(0, 0, 0, 0.66);
+  font-size: 16px;
+  line-height: 22px;
+  text-decoration: none;
+  border-radius: 8px 8px 0 0;
+}
+.wordcounter-field__top .wordcounter-field__title a.wordcounter-field__tab:hover {
+  background-color: rgba(0, 0, 0, 0.04);
+}
+.wordcounter-field__top .wordcounter-field__title a.wordcounter-field__tab.active {
+  border-bottom: 2px solid #000;
+  font-weight: 700;
+}
+.wordcounter-field__top ul.wordcounter-field__list li.wordcounter-field__list-item {
+  padding: 8px 0;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+  display: flex;
+  -webkit-box-pack: justify;
+  justify-content: space-between;
+}
+.wordcounter-field__top .wordcounter-field__slide {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 15px 0;
+}
+.wordcounter-field__top .wordcounter-field__slide span {
+  font-size: 12px;
+}
+.wordcounter-field ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+/*# sourceMappingURL=index.css.map */

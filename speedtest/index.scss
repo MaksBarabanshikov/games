@@ -1,0 +1,131 @@
+* {
+  box-sizing: border-box;
+}
+
+.speed-field {
+  display: flex;
+  max-width: 1200px;
+  font-family: sans-serif;
+  font-weight: 700;
+  margin: 40px auto auto;
+  position: relative;
+
+  &__title {
+    font-size: 16px;
+    margin-bottom: 20px;
+  }
+
+  &__subtitle {
+    margin-bottom: 30px;
+
+    h2 {
+      margin: 0;
+    }
+  }
+
+  &__subtext {
+    display: flex;
+    align-items: flex-end;
+    font-size: 16px !important;
+  }
+
+  &__graph {
+    height: 105px;
+  }
+
+  &__download {
+    width: 50%;
+    margin-right: 10px;
+
+    .speed-field__subtitle {
+      display: flex;
+      font-size: 60px;
+    }
+
+    .speed-field__subtext {
+      padding-bottom: 17px;
+    }
+  }
+
+  &__upload {
+    width: 40%;
+    margin-right: 10px;
+
+    .speed-field__subtitle {
+      display: flex;
+      font-size: 30px;
+      margin-bottom: 83px;
+    }
+
+    .speed-field__subtext {
+      padding-bottom: 9px;
+    }
+
+    .speed-field__graph {
+      margin-left: -60px;
+    }
+  }
+
+  &__ping-jitter {
+    .speed-field__ping {
+      margin-bottom: 85px;
+    }
+
+    .speed-field__subtitle {
+      display: flex;
+      font-size: 30px;
+    }
+
+    .speed-field__subtext {
+      padding-bottom: 9px;
+    }
+  }
+
+  &__buttons {
+    display: flex;
+    position: absolute;
+    bottom: -30px;
+    width: 200px;
+    justify-content: space-between;
+
+    .speed-field__btn {
+      transition-timing-function: ease;
+      transition-duration: 300ms;
+      background-color: #fff;
+      border-radius: 5px;
+      text-align: center;
+      white-space: nowrap;
+      font-size: 14px;
+      padding: 8px 16px;
+      border: 1px solid rgb(0, 69, 166);
+      cursor: pointer;
+      color: rgb(0, 69, 166);
+
+      &:hover {
+        background-color: rgb(0, 54, 129);
+        color: rgb(255, 255, 255);
+      }
+  }
+
+    .speed-field__btn.pause {
+      &:before {
+        content: "\f28b";
+        display: inline-flex;
+        font-family: "Font Awesome 5 Pro";
+        font-size: 15px;
+        margin-right: 5px;
+      }
+
+    }
+
+    .speed-field__btn.ref {
+      &:before {
+        content: "\f01e";
+        display: inline-flex;
+        font-family: "Font Awesome 5 Pro";
+        font-size: 14px;
+        margin-right: 5px;
+      }
+    }
+  }
+}

@@ -1,0 +1,204 @@
+* {
+  box-sizing: border-box;
+}
+
+.game__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  user-select: none;
+}
+
+.piano-field {
+  display: flex;
+  position: relative;
+  font-family: sans-serif;
+  border: 27px solid black;
+
+  &:before {
+    content: "\f056";
+    position: absolute;
+    font-family: "Font Awesome 5 Pro";
+    font-size: 50px;
+    left: -90px;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 100;
+    cursor: pointer;
+  }
+
+  &:after {
+    content: "\f055";
+    position: absolute;
+    font-family: "Font Awesome 5 Pro";
+    font-size: 50px;
+    right: -90px;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 100;
+    cursor: pointer;
+
+  }
+
+  &__note {
+    position: relative;
+    cursor: pointer;
+    text-align: center;
+    transition: background-color 0.05s ease, box-shadow 0.05s ease;
+    border-top: none;
+
+
+    .piano-field__keytext,
+    .piano-field__keytext-sub{
+      position: absolute;
+      bottom: 0;
+      display: inline;
+    }
+    .piano-field__keytext {
+      left: 50%;
+      transform: translateX(-50%);
+      margin: 16px 0;
+    }
+  }
+
+  &__note.black {
+    width: 50px;
+    height: 200px;
+    background-color: black;
+    margin-left: -25px;
+    margin-right: -25px;
+    z-index: 2;
+    color: white;
+    box-shadow: 0 5px 1px rgba(32, 32, 32, 0.2);
+    border-radius: 0 0 10px 10px;
+
+    .piano-field__keytext-sub {
+      display: inline-flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      font-size: 30px;
+      top: 20px;
+      color: #6b778b;
+      position: relative;
+      max-height: 16px;
+
+      &:after {
+        content: '\f357';
+        display: inline-flex;
+        font-family: "Font Awesome 5 Pro";
+        position: absolute;
+        top: 70px;
+      }
+
+      &:before {
+        content: "\f067";
+        display: inline-flex;
+        font-family: "Font Awesome 5 Pro";
+        position: absolute;
+        top: 30px;
+      }
+    }
+  }
+
+  &__note.white {
+    width: 80px;
+    height: 320px;
+    background-color: white;
+    border: 1px solid #333;
+    color: black;
+
+    &:last-child {
+      border-right: 1px solid #333;
+    }
+
+    .piano-field__keytext {
+      transform: translateX(-50%);
+    }
+
+    .piano-field__keytext-sub {
+      font-size: 40px;
+      bottom: 50px;
+      color: #6b778b;
+    }
+  }
+
+  &__note.active {
+    box-shadow: 0 0 0 rgba(32, 32, 32, 0);
+    top: 5px;
+  }
+
+  &__note.white.active {
+    background: #D8D8D8;
+  }
+
+}
+
+.piano-field.six-black {
+  margin-top: 10px;
+
+  .piano-field__note.white {
+    width: 60px !important;
+    height: 300px !important;
+  }
+
+  .piano-field__note.black {
+    width: 45px;
+    height: 180px;
+    margin-left: -23px;
+    margin-right: -22px;
+  }
+}
+
+.piano-field.eight-black {
+  margin-top: 10px;
+
+  .piano-field__note.white {
+    width: 55px !important;
+    height: 300px !important;
+  }
+
+  .piano-field__note.black {
+    width: 45px;
+    height: 180px;
+    margin-left: -23px;
+    margin-right: -22px;
+  }
+}
+
+.piano-field.ten-black {
+  margin-top: 10px;
+  border-width: 23px;
+
+  &:before {
+    left: -80px;
+  }
+  &:after {
+    right: -80px;
+  }
+
+  .piano-field__note.white {
+    width: 48px !important;
+    height: 250px !important;
+  }
+
+  .piano-field__note.black {
+    width: 35px;
+    height: 150px;
+    margin-left: -17px;
+    margin-right: -18px;
+
+    .piano-field__keytext-sub {
+      font-size: 24px;
+
+      &:after {
+        top: 57px;
+      }
+
+      &:before {
+        top: 27px;
+      }
+
+    }
+  }
+}

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Metronome</title>
+    <link rel="stylesheet" href="index.css">
+    <script src="https://use.fontawesome.com/releases/v5.15.4/js/all.js" data-auto-replace-svg="nest"></script>
+</head>
+<body>
+<div class="game__main">
+    <div class="game__container">
+        <div class="game__metronome metronome">
+            <div class="metronome__bpm">
+                <div class="metronome__number">
+                    <span class="metronome__small-num">1</span>
+                    <span class="metronome__big-num">35</span></div>
+                <span class="metronome__text">BPM</span>
+            </div>
+            <div class="metronome__type">
+                allegro
+            </div>
+            <div class="metronome__slider">
+                <div class="metronome__minus">
+                    <i class="fas fa-plus-circle"></i>
+                </div>
+                <div class="metronome__range">
+                    <input class="metronome__slider-range" type="range">
+                </div>
+                <div class="metronome__plus">
+                    <i class="fas fa-minus-circle"></i>
+                </div>
+            </div>
+            <div class="metronome__circles">
+                <div class="metronome__circle metronome__minus">
+                    <i class="fas fa-minus-circle"></i>
+                </div>
+                <div class="metronome__circle active-circle"></div>
+                <div class="metronome__circle"></div>
+                <div class="metronome__circle"></div>
+                <div class="metronome__circle"></div>
+                <div class="metronome__circle metronome__plus">
+
+                    <i class="fas fa-plus-circle"></i>
+                </div>
+            </div>
+            <div class="metronome__btn play">
+                <i class="far fa-play-circle play-btn"></i>
+                <i class="far fa-pause-circle"></i>
+            </div>
+            <div class="metronome__btn">
+                <i class="far fa-play-circle play-btn"></i>
+                <i class="far fa-pause-circle pause-btn"></i>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

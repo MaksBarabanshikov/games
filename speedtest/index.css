@@ -1,0 +1,84 @@
+* {
+  box-sizing: border-box; }
+
+.speed-field {
+  display: flex;
+  max-width: 1200px;
+  font-family: sans-serif;
+  font-weight: 700;
+  margin: 40px auto auto;
+  position: relative; }
+  .speed-field__title {
+    font-size: 16px;
+    margin-bottom: 20px; }
+  .speed-field__subtitle {
+    margin-bottom: 30px; }
+    .speed-field__subtitle h2 {
+      margin: 0; }
+  .speed-field__subtext {
+    display: flex;
+    align-items: flex-end;
+    font-size: 16px !important; }
+  .speed-field__graph {
+    height: 105px; }
+  .speed-field__download {
+    width: 50%;
+    margin-right: 10px; }
+    .speed-field__download .speed-field__subtitle {
+      display: flex;
+      font-size: 60px; }
+    .speed-field__download .speed-field__subtext {
+      padding-bottom: 17px; }
+  .speed-field__upload {
+    width: 40%;
+    margin-right: 10px; }
+    .speed-field__upload .speed-field__subtitle {
+      display: flex;
+      font-size: 30px;
+      margin-bottom: 83px; }
+    .speed-field__upload .speed-field__subtext {
+      padding-bottom: 9px; }
+    .speed-field__upload .speed-field__graph {
+      margin-left: -60px; }
+  .speed-field__ping-jitter .speed-field__ping {
+    margin-bottom: 85px; }
+  .speed-field__ping-jitter .speed-field__subtitle {
+    display: flex;
+    font-size: 30px; }
+  .speed-field__ping-jitter .speed-field__subtext {
+    padding-bottom: 9px; }
+  .speed-field__buttons {
+    display: flex;
+    position: absolute;
+    bottom: -30px;
+    width: 200px;
+    justify-content: space-between; }
+    .speed-field__buttons .speed-field__btn {
+      transition-timing-function: ease;
+      transition-duration: 300ms;
+      background-color: #fff;
+      border-radius: 5px;
+      text-align: center;
+      white-space: nowrap;
+      font-size: 14px;
+      padding: 8px 16px;
+      border: 1px solid #0045a6;
+      cursor: pointer;
+      color: #0045a6; }
+      .speed-field__buttons .speed-field__btn:hover {
+        background-color: #003681;
+        color: white; }
+    .speed-field__buttons .speed-field__btn.pause:before {
+      content: "\f28b";
+      display: inline-flex;
+      font-family: "Font Awesome 5 Pro";
+      font-size: 15px;
+      margin-right: 5px; }
+    .speed-field__buttons .speed-field__btn.ref:before {
+      content: "\f01e";
+      display: inline-flex;
+      font-family: "Font Awesome 5 Pro";
+      font-size: 14px;
+      margin-right: 5px; }
+
+/*# sourceMappingURL=index.css.map */

@@ -1,0 +1,218 @@
+* {
+  box-sizing: border-box; }
+
+.game__container {
+  max-width: 1241px;
+  margin: auto; }
+.game__body {
+  max-height: 500px;
+  display: flex; }
+.game__row {
+  display: flex;
+  justify-content: center;
+  height: 186px;
+  position: relative; }
+.game__card {
+  background-repeat: no-repeat;
+  background-size: 1561.04px 934.8px;
+  width: 120.08px;
+  height: 186.96px;
+  border-radius: 6px;
+  transform-style: preserve-3d;
+  transform: rotateY(180deg);
+  transition: .3s ease-in-out;
+  margin: 0 2px; }
+  .game__card_base {
+    border: 1.5px solid #999;
+    border-radius: 6px; }
+  .game__card_front {
+    background-size: 1561.04px 934.8px;
+    width: 120.08px;
+    height: 186.96px;
+    border-radius: 6px;
+    top: 0;
+    left: 0;
+    right: 0;
+    position: absolute;
+    background-image: url(cards.svg);
+    transform: rotateY(180deg); }
+  .game__card_back {
+    background-image: url(cards.svg);
+    background-size: 1561.04px 934.8px;
+    width: 120.08px;
+    height: 186.96px;
+    border-radius: 6px;
+    background-position: -240.16px -747.84px;
+    transform: rotateY(0deg); }
+  .game__card_closed {
+    transform: rotateY(0deg); }
+  .game__card_hearts_queen .game__card_front {
+    background-position: -1320.88px -373.92px; }
+.game__deck {
+  display: flex;
+  justify-content: center; }
+  .game__deck .game__deck-card_closed {
+    margin-right: 20px;
+    position: relative; }
+  .game__deck .game__card:not(.game__card_base) {
+    position: absolute; }
+  .game__deck .game__deck-cards_showcase {
+    position: relative; }
+
+.game__card_clubs_ace .game__card_front {
+  background-position: 0px 0px; }
+
+.game__card_clubs_2 .game__card_front {
+  background-position: -120.08px 0px; }
+
+.game__card_clubs_3 .game__card_front {
+  background-position: -240.16px 0px; }
+
+.game__card_clubs_4 .game__card_front {
+  background-position: -360.24px 0px; }
+
+.game__card_clubs_5 .game__card_front {
+  background-position: -480.32px 0px; }
+
+.game__card_clubs_6 .game__card_front {
+  background-position: -600.4px 0px; }
+
+.game__card_clubs_7 .game__card_front {
+  background-position: -720.48px 0px; }
+
+.game__card_clubs_8 .game__card_front {
+  background-position: -840.56px 0px; }
+
+.game__card_clubs_9 .game__card_front {
+  background-position: -960.64px 0px; }
+
+.game__card_clubs_10 .game__card_front {
+  background-position: -1080.72px 0px; }
+
+.game__card_clubs_jack .game__card_front {
+  background-position: -1200.8px 0px; }
+
+.game__card_clubs_queen .game__card_front {
+  background-position: -1320.88px 0px; }
+
+.game__card_clubs_king .game__card_front {
+  background-position: -1440.96px 0px; }
+
+.game__card_diamonds_ace .game__card_front {
+  background-position: 0px -186.96px; }
+
+.game__card_diamonds_2 .game__card_front {
+  background-position: -120.08px -186.96px; }
+
+.game__card_diamonds_3 .game__card_front {
+  background-position: -240.16px -186.96px; }
+
+.game__card_diamonds_4 .game__card_front {
+  background-position: -360.24px -186.96px; }
+
+.game__card_diamonds_5 .game__card_front {
+  background-position: -480.32px -186.96px; }
+
+.game__card_diamonds_6 .game__card_front {
+  background-position: -600.4px -186.96px; }
+
+.game__card_diamonds_7 .game__card_front {
+  background-position: -720.48px -186.96px; }
+
+.game__card_diamonds_8 .game__card_front {
+  background-position: -840.56px -186.96px; }
+
+.game__card_diamonds_9 .game__card_front {
+  background-position: -960.64px -186.96px; }
+
+.game__card_diamonds_10 .game__card_front {
+  background-position: -1080.72px -186.96px; }
+
+.game__card_diamonds_jack .game__card_front {
+  background-position: -1200.8px -186.96px; }
+
+.game__card_diamonds_queen .game__card_front {
+  background-position: -1320.88px -186.96px; }
+
+.game__card_diamonds_king .game__card_front {
+  background-position: -1440.96px -186.96px; }
+
+.game__card_hearts_ace .game__card_front {
+  background-position: 0px -373.92px; }
+
+.game__card_hearts_2 .game__card_front {
+  background-position: -120.08px -373.92px; }
+
+.game__card_hearts_3 .game__card_front {
+  background-position: -240.16px -373.92px; }
+
+.game__card_hearts_4 .game__card_front {
+  background-position: -360.24px -373.92px; }
+
+.game__card_hearts_5 .game__card_front {
+  background-position: -480.32px -373.92px; }
+
+.game__card_hearts_6 .game__card_front {
+  background-position: -600.4px -373.92px; }
+
+.game__card_hearts_7 .game__card_front {
+  background-position: -720.48px -373.92px; }
+
+.game__card_hearts_8 .game__card_front {
+  background-position: -840.56px -373.92px; }
+
+.game__card_hearts_9 .game__card_front {
+  background-position: -960.64px -373.92px; }
+
+.game__card_hearts_10 .game__card_front {
+  background-position: -1080.72px -373.92px; }
+
+.game__card_hearts_jack .game__card_front {
+  background-position: -1200.8px -373.92px; }
+
+.game__card_hearts_queen .game__card_front {
+  background-position: -1320.88px -373.92px; }
+
+.game__card_hearts_king .game__card_front {
+  background-position: -1440.96px -373.92px; }
+
+.game__card_spades_ace .game__card_front {
+  background-position: 0px -560.88px; }
+
+.game__card_spades_2 .game__card_front {
+  background-position: -120.08px -560.88px; }
+
+.game__card_spades_3 .game__card_front {
+  background-position: -240.16px -560.88px; }
+
+.game__card_spades_4 .game__card_front {
+  background-position: -360.24px -560.88px; }
+
+.game__card_spades_5 .game__card_front {
+  background-position: -480.32px -560.88px; }
+
+.game__card_spades_6 .game__card_front {
+  background-position: -600.4px -560.88px; }
+
+.game__card_spades_7 .game__card_front {
+  background-position: -720.48px -560.88px; }
+
+.game__card_spades_8 .game__card_front {
+  background-position: -840.56px -560.88px; }
+
+.game__card_spades_9 .game__card_front {
+  background-position: -960.64px -560.88px; }
+
+.game__card_spades_10 .game__card_front {
+  background-position: -1080.72px -560.88px; }
+
+.game__card_spades_jack .game__card_front {
+  background-position: -1200.8px -560.88px; }
+
+.game__card_spades_queen .game__card_front {
+  background-position: -1320.88px -560.88px; }
+
+.game__card_spades_king .game__card_front {
+  background-position: -1440.96px -560.88px; }
+
+/*# sourceMappingURL=index.css.map */
