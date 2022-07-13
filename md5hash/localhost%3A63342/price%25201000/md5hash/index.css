@@ -1,0 +1,23 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.app_main {
+  width: 1100px;
+  margin: 10px auto;
+  font-family: sans-serif;
+}
+
+.field__md5hash button {
+  border: none;
+  border-radius: 5px;
+  padding: 10px;
+}
+.field__md5hash_label {
+  display: flex;
+  flex-direction: column;
+}
+
+/*# sourceMappingURL=index.css.map */

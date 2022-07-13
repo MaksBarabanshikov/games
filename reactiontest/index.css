@@ -1,0 +1,66 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.app_main {
+  width: 1100px;
+  margin: 10px auto;
+  font-family: sans-serif;
+}
+
+.field__react-test_rect {
+  height: 800px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.field__react-test_rect-content {
+  color: #fff;
+  text-align: center;
+}
+.field__react-test_rect-content button {
+  width: 100%;
+  padding: 10px;
+  background-color: #d94e26;
+  border-radius: 5px;
+  border: none;
+  color: #fff;
+  transition: background-color 0.2s ease-in-out;
+  cursor: pointer;
+  margin-top: 5px;
+}
+.field__react-test_rect-content button:hover {
+  background-color: #cc441a;
+}
+.field__react-test_rect.info {
+  background-color: #0dcaf0 !important;
+}
+.field__react-test_rect.danger {
+  background-color: #dc3545 !important;
+}
+.field__react-test_rect.success {
+  background-color: #198754 !important;
+}
+.field__react-test_rect.warning {
+  background-color: #ffc107 !important;
+}
+.field__react-test_rect.final {
+  background-color: rgb(51, 81, 131);
+  flex-direction: column;
+}
+.field__react-test_rect.final .field__react-test_rect-content {
+  max-width: 450px;
+}
+.field__react-test_rect.final h1 {
+  color: #fff;
+  text-align: center;
+}
+.field__react-test_rect.final button {
+  max-width: 100px;
+  margin: auto;
+}
+
+/*# sourceMappingURL=index.css.map */

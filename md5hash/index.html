@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>md5hash </title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+          integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+          crossorigin="anonymous" referrerpolicy="no-referrer"/>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/js/all.min.js"
+            integrity="sha512-6PM0qYu5KExuNcKt5bURAoT6KCThUmHRewN3zUFNaoI6Di7XJPTMoT6K0nsagZKk2OB4L7E3q1uQKHNHd4stIQ=="
+            crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+<div class="app_main">
+    <div class="app__container">
+        <div class="app__field field">
+            <div class="field__md5hash">
+                <label class="field__md5hash_label">
+                    <div>
+                        <label>
+                        <span>
+                            Treat multiple lines as separate strings (blank lines are ignored)
+                        </span>
+                            <input type="checkbox"></label>
+                        <label>
+                            <span>Uppercase hash(es)</span>
+                            <input type="checkbox">
+                        </label>
+                    </div>
+                    <input class="field__md5hash_input" placeholder="Enter text"/>
+                </label>
+                <button class="field__md5hash_btn">
+                    <span>Generate</span>
+                    <i class="fa-solid fa-arrow-rotate-right"></i>
+                </button>
+
+                <div class="field__md5hash_result">
+                    <h1>
+                        1cb251ec0d568de6a929b520c4aed8d1
+                    </h1>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

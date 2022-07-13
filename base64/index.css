@@ -1,0 +1,56 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.app_main {
+  width: 1100px;
+  margin: 10px auto;
+  font-family: sans-serif;
+  border: 1px solid #b1b6bf;
+  padding: 1.5rem;
+}
+
+.field__base64 button {
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
+}
+.field__base64_buttons button {
+  background-color: #198754;
+  color: #fff;
+}
+.field__base64_buttons button:hover {
+  background-color: #117549;
+}
+.field__base64_input {
+  position: relative;
+  height: 200px;
+  margin-bottom: 10px;
+}
+.field__base64_input textarea {
+  padding: 10px;
+  height: 100%;
+  width: 100%;
+  outline: none;
+  resize: none;
+}
+.field__base64_input-buttons {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+}
+.field__base64_input-buttons button {
+  background-color: #0d6efd;
+  color: #fff;
+}
+.field__base64_input-buttons button:hover {
+  background-color: #055fee;
+}
+.field__base64 .btn {
+  border: none;
+  border-radius: 5px;
+  padding: 10px;
+}
+
+/*# sourceMappingURL=index.css.map */
